@@ -109,4 +109,4 @@ if ( ! function_exists( 'humait_setup_theme' ) ) {
 add_action( 'after_setup_theme', 'humait_setup_theme', 20 );
 
 
-require get_template_directory() . '/inc/custom_functions.php';
+require get_stylesheet_directory() . '/inc/custom_functions.php';
