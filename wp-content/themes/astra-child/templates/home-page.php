@@ -8,9 +8,9 @@ get_header(); ?>
 
      <!-- html -->
 
-    <!-- <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sample.jpg" alt="sample" height="100" width="200"> -->
+    <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sample.jpg" alt="sample" height="100" width="200">
 
-    <?php the_content(); ?>
+
 
 
 <?php get_footer(); ?>
