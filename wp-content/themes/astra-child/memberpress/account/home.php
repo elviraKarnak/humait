@@ -2,11 +2,12 @@
     die('You are not allowed to call this page directly.');
 } ?>
 
-<h2>Templates Override</h2>
 
 <div class="mp_wrapper">
   <?php if (!empty($welcome_message)) : ?>
     <div id="mepr-account-welcome-message">
+        
+<h2>Templates Override</h2>
         <?php
         echo MeprAppHelper::wp_kses(MeprHooks::apply_filters('mepr_account_welcome_message', $welcome_message, $mepr_current_user)); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
         ?>
