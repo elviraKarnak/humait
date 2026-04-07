@@ -10,7 +10,7 @@ get_header(); ?>
 
     <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sample.jpg" alt="sample" height="100" width="200">
 
-
+Test homepage
 
 
 <?php get_footer(); ?>
