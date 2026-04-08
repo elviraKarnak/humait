@@ -24,6 +24,7 @@ add_action('acf/init', function () {
         'in-one-system' => 'In One System',
         'gfc-humit'  => 'GFC Humit',  
         'humait-architecture'  => 'HumAIT Architecture',
+        'user-journey'  => 'User Journey',
     ];
 
     
