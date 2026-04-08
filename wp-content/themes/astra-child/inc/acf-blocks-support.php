@@ -22,6 +22,7 @@ add_action('acf/init', function () {
     $blocks = [
         'banner'      => 'Home Banner',
         'in-one-system' => 'In One System',
+        'gfc-humit'  => 'GFC Humit',  
     ];
 
     
