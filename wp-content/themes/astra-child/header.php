@@ -63,65 +63,7 @@ if (!defined('ABSPATH')) {
 		?>
 
 
-		<header class="main-header">
-			<div class="container">
 
-				<!-- LEFT MENU -->
-				<nav class="menu">
-					<div class="menu-close">✕</div>
-
-					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Book</a>
-					<a href="#">Membership</a>
-					<a href="#">Blog</a>
-				</nav>
-
-				<!-- LOGO -->
-				<div class="logo">
-					<a href="index.html"><img src="./assets/images/site-logo.svg" alt="site logo"></a>
-				</div>
-
-				<!-- RIGHT SIDE -->
-				<div class="right">
-
-					<!-- LANGUAGE DROPDOWN -->
-					<div class="lang-dropdown">
-						<div class="selected">
-							<img src="./assets/images/usa-flag.svg" alt="usa flag">
-							<span>English</span>
-						</div>
-
-						<ul>
-							<li>
-								<img src="./assets/images/usa-flag.svg" alt="usa flag"> English
-							</li>
-							<li>
-								<img src="./assets/images/france.webp" alt="france"> French
-							</li>
-							<li>
-								<img src="./assets/images/spain.webp" alt="spain"> Spanish
-							</li>
-						</ul>
-					</div>
-
-					<!-- BUTTON -->
-					<div class="btn_wrapper">
-						<a href="#" class="btn">Contact Us <img src="./assets/images/button-arrow.svg"
-								alt="button arrow"></a>
-					</div>
-					<!-- TOGGLE BUTTON -->
-					<div class="menu-toggle">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-
-			</div>
-
-	</div>
-	</header>
 
 
 
