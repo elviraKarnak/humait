@@ -404,6 +404,12 @@ svg {
   background: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
+
+.primary_menu{
+	display:flex;
+	gap:20px;
+}
+
 /* header end */
 
 /* hero-section start */

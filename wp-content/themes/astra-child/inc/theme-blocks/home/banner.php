@@ -57,8 +57,8 @@ $buttonArrowWidth = $buttonArrow ? $buttonArrow['width'] : '11';
                         </div>
                     <?php endif; ?>
                     <?php if(!empty($homeBannerLeftBtn)): ?>
-                    <div class="btn_wrapper btn_wrapper2">
-                        <a href="<?php echo $homeBannerLeftBtn['url']; ?>" target='<?php echo $homeBannerLeftBtn['target'] ? $homeBannerLeftBtn['target'] : '_self'; ?>' class="btn btn2">
+                    <div class="btn_wrapper">
+                        <a href="<?php echo $homeBannerLeftBtn['url']; ?>" target='<?php echo $homeBannerLeftBtn['target'] ? $homeBannerLeftBtn['target'] : '_self'; ?>' class="btn">
                             <?php echo $homeBannerLeftBtn['title']; ?> 
                             <img
                                     src="<?php echo $buttonArrowUrl; ?>"
