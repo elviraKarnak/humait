@@ -29,7 +29,7 @@ add_action('acf/init', function () {
         acf_register_block_type([
             'name'            => $slug,
             'title'           => $title,
-            'render_template' => get_template_directory() . "/inc/theme-blocks/home/{$slug}.php",
+            'render_template' => get_stylesheet_directory() . "/inc/theme-blocks/home/{$slug}.php",
             'category'        => 'home-sections',
             'icon'            => 'block-default',
             'mode'            => 'preview',
