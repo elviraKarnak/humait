@@ -28,7 +28,7 @@ Test homepage -->
 
     <!-- LOGO -->
     <div class="logo">
-      <a href="index.html"><img src="./assets/images/site-logo.svg" alt="site logo"></a>
+      <a href="index.html"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/site-logo.svg" alt="site logo"></a>
     </div>
 
     <!-- RIGHT SIDE -->
@@ -37,26 +37,26 @@ Test homepage -->
       <!-- LANGUAGE DROPDOWN -->
       <div class="lang-dropdown">
         <div class="selected">
-          <img src="./assets/images/usa-flag.svg" alt="usa flag">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/usa-flag.svg" alt="usa flag">
           <span>English</span>
         </div>
 
         <ul>
           <li>
-            <img src="./assets/images/usa-flag.svg" alt="usa flag"> English
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/usa-flag.svg" alt="usa flag"> English
           </li>
           <li>
-            <img src="./assets/images/france.webp" alt="france"> French
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/france.webp" alt="france"> French
           </li>
           <li>
-            <img src="./assets/images/spain.webp" alt="spain"> Spanish
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/spain.webp" alt="spain"> Spanish
           </li>
         </ul>
       </div>
 
       <!-- BUTTON -->
       <div class="btn_wrapper">
-        <a href="#" class="btn">Contact Us <img src="./assets/images/button-arrow.svg" alt="button arrow"></a>
+        <a href="#" class="btn">Contact Us <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow"></a>
       </div>
       <!-- TOGGLE BUTTON -->
       <div class="menu-toggle">
@@ -467,7 +467,7 @@ Test homepage -->
 
   </div>
 </section>
-<footer class="main-footer" style=' background: url("assets/images/footer-bg.webp") no-repeat center/cover;'>
+<footer class="main-footer" style=' background: url("<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-bg.webp") no-repeat center/cover;'>
   <div class="container">
 
     <!-- TOP BAR -->
@@ -475,7 +475,7 @@ Test homepage -->
 
       <div class="col-md-3 col-12">
         <div class="logo text-md-start text-center">
-          <img src="./assets/images/site-logo.svg" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/site-logo.svg" alt="">
         </div>
       </div>
 
@@ -512,10 +512,10 @@ Test homepage -->
 
 
         <div class="social">
-          <a href="#"><img src="assets/images/facebook.svg" alt="Facebook"></a>
-          <a href="#"><img src="assets/images/x.svg" alt="X"></a>
-          <a href="#"><img src="assets/images/instagram.svg" alt="Instagram"></a>
-          <a href="#"><img src="assets/images/in.svg" alt="In"></a>
+          <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/x.svg" alt="X"></a>
+          <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/in.svg" alt="In"></a>
 
         </div>
       </div>
@@ -526,18 +526,18 @@ Test homepage -->
           <ul>
             <li>
               <div class="btn_wrapper">
-                <a href="#" class="btn">Join the Movement <img src="./assets/images/button-arrow.svg"
+                <a href="#" class="btn">Join the Movement <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg"
                     alt="button arrow"></a>
               </div>
             </li>
             <li>
               <div class="btn_wrapper">
-                <a href="#" class="btn">Get the Book <img src="./assets/images/button-arrow.svg" alt="button arrow"></a>
+                <a href="#" class="btn">Get the Book <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow"></a>
               </div>
             </li>
             <li>
               <div class="btn_wrapper">
-                <a href="#" class="btn">Listen to the Audio <img src="./assets/images/button-arrow.svg"
+                <a href="#" class="btn">Listen to the Audio <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg"
                     alt="button arrow"></a>
               </div>
             </li>
@@ -555,7 +555,7 @@ Test homepage -->
 
         <div class="newsletter">
           <input type="text" placeholder="Your email address">
-          <button><img src="assets/images/newsletter-arrow.svg" alt="newsletter arrow"></button>
+          <button><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/newsletter-arrow.svg" alt="newsletter arrow"></button>
         </div>
         <p>No spam. No noise. Just truth.</p>
       </div>
@@ -566,7 +566,7 @@ Test homepage -->
     <div class="bottom d-flex justify-content-between mt-5">
       <p>© Copyright 2025 All rights reserved.</p>
       <span>Designed & Developed by <a href="https://elvirainfotech.com/" target="_blank"><img
-            src="assets/images/elvira-logo.svg" alt="Elvira Logo"></a></span>
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/elvira-logo.svg" alt="Elvira Logo"></a></span>
     </div>
 
   </div>
