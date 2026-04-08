@@ -53,13 +53,13 @@ if (!defined('ABSPATH')) {
 	);
 	?>>
 		<?php
-		astra_header_before();
+		// astra_header_before();
 
-		astra_header();
+		// astra_header();
 
-		astra_header_after();
+		// astra_header_after();
 
-		astra_content_before();
+		// astra_content_before();
 		?>
 
 
