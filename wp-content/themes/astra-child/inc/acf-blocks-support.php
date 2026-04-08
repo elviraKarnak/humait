@@ -23,6 +23,7 @@ add_action('acf/init', function () {
         'banner'      => 'Home Banner',
         'in-one-system' => 'In One System',
         'gfc-humit'  => 'GFC Humit',  
+        'humait-architecture'  => 'HumAIT Architecture',
     ];
 
     
