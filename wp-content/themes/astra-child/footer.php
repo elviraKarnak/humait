@@ -30,6 +30,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
       <div class="col-md-9 col-12 text-end">
         <nav class="menu">
+
+		
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Book</a>
