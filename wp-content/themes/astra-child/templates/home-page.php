@@ -13,60 +13,12 @@ get_header(); ?>
 Test homepage -->
 
 
-  <header class="main-header">
+  
+
+ 
+  <section class="hero-section" style='background: url("<?php echo get_stylesheet_directory_uri();?>/assets/images/hero-section-bg.webp") no-repeat center/cover;'>
     <div class="container">
-
-      <!-- LEFT MENU -->
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Book</a>
-        <a href="#">Membership</a>
-        <a href="#">Blog</a>
-      </nav>
-
-      <!-- LOGO -->
-      <div class="logo">
-        <a href="index.html"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/site-logo.svg" alt="site logo"></a>
-      </div>
-
-      <!-- RIGHT SIDE -->
-      <div class="right">
-
-        <!-- LANGUAGE DROPDOWN -->
-        <div class="lang-dropdown">
-          <div class="selected">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/usa-flag.svg" alt="usa flag">
-            <span>English</span>
-          </div>
-
-          <ul>
-            <li>
-              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/usa-flag.svg" alt="usa flag"> English
-            </li>
-            <li>
-              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/france.webp" alt="france"> French
-            </li>
-            <li>
-              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/spain.webp" alt="spain"> Spanish
-            </li>
-          </ul>
-        </div>
-
-        <!-- BUTTON -->
-        <div class="btn_wrapper">
-          <a href="#" class="btn">Contact Us <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg" alt="button arrow"></a>
-        </div>
-      </div>
-    </div>
-
-    </div>
-  </header>
-
-
-  <section class="hero-section">
-    <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center hero-content">
 
         <!-- LEFT -->
         <div class="col-lg-7 text-center">
@@ -81,13 +33,13 @@ Test homepage -->
             Where Human Intelligence meets Artificial Intelligence to create a truth-based, conscious, and scalable
             future.
           </p>
-          <div class="btns d-flex justify-content-center gap-3">
-            <div class="btn_wrapper">
+          <div class="btns d-flex justify-content-center align-items-center flex-column flex-md-row gap-3">
+            <div class="btn_wrapper btn_wrapper2">
               <a href="#" class="btn btn2">Read the Book <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg"
                   alt="button arrow"></a>
             </div>
             <div class="btn_wrapper">
-              <a href="#" class="btn btn2">Listen to the Audio <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg"
+              <a href="#" class="btn">Listen to the Audio <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg"
                   alt="button arrow"></a>
             </div>
           </div>
@@ -95,7 +47,7 @@ Test homepage -->
 
         <!-- RIGHT -->
         <div class="col-lg-5 text-end books">
-          <img src="assets/images/books.webp" alt="books">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/books.webp" alt="books">
 
         </div>
 
@@ -104,13 +56,14 @@ Test homepage -->
   </section>
 
 
-  <section class="truth-section">
+  <section class="truth-section"
+    style=' background: url("<?php echo get_stylesheet_directory_uri();?>/assets/images/truth-section-bg.webp") no-repeat center/cover;'>
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-lg-4 text-center ">
           <!-- LEFT -->
           <div class="left">
-            <div class="icon-text"><img src="assets/images/book-icon.svg" alt="Book Icon"><span>In One System</span>
+            <div class="icon-text"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/book-icon.svg" alt="Book Icon"><span>In One System</span>
             </div>
 
 
@@ -124,8 +77,8 @@ Test homepage -->
             </p>
 
             <!-- BUTTON -->
-            <div class="btn_wrapper">
-              <a href="#" class="btn">Discover the Truth <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg"
+            <div class="btn_wrapper btn_wrapper2">
+              <a href="#" class="btn btn2">Discover the Truth <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg"
                   alt="button arrow"></a>
             </div>
           </div>
@@ -138,7 +91,7 @@ Test homepage -->
 
             <div class="content">
               <div class="number">01</div>
-              <div>
+              <div class="con-text">
                 <h3>Time for Money</h3>
                 <p>Your life is measured in hours sold… not value lived.</p>
               </div>
@@ -146,7 +99,7 @@ Test homepage -->
 
             <div class="content">
               <div class="number">02</div>
-              <div>
+              <div class="con-text">
                 <h3>Centralized Control</h3>
                 <p>Decisions are made far from the people they affect.</p>
               </div>
@@ -154,7 +107,7 @@ Test homepage -->
 
             <div class="content">
               <div class="number">03</div>
-              <div>
+              <div class="con-text">
                 <h3>The Disconnection</h3>
                 <p>We’ve lost connection to truth, purpose, and each other.</p>
               </div>
@@ -168,20 +121,20 @@ Test homepage -->
     </div>
   </section>
 
-  <section class="split-hero">
+  <section class="split-hero" style='background: url("<?php echo get_stylesheet_directory_uri();?>/assets/images/split-hero-bg.webp") no-repeat center/cover;'>
     <div class="container">
 
       <!-- TOP LEFT / RIGHT -->
-      <div class="row align-items-start top">
+      <div class="row align-items-start justify-content-between top">
 
         <!-- LEFT -->
-        <div class="col-lg-6 text-start">
+        <div class="col-lg-3 col-6 text-center">
           <h2>GFC</h2>
           <p>Greed · Fear · Control</p>
         </div>
 
         <!-- RIGHT -->
-        <div class="col-lg-6 text-end">
+        <div class="col-lg-4 col-6 text-center">
           <h2>Hum<span>AIT</span></h2>
           <p>Human Intelligence and Artificial Intelligence in Unity</p>
         </div>
@@ -204,20 +157,21 @@ Test homepage -->
   </section>
 
 
-  <section class="architecture-section">
+  <section class="architecture-section"
+    style='background: url("<?php echo get_stylesheet_directory_uri();?>/assets/images/architecture-section-bg.webp") no-repeat center/cover;'>
     <div class="container">
       <div class="row align-items-center content-gap">
 
         <!-- LEFT IMAGE -->
         <div class="col-lg-5 mb-4 mb-lg-0">
           <div class="image-box">
-            <img src="assets/images/architecture-image.webp" alt="Architecture Inage">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/architecture-image.webp" alt="Architecture Inage">
           </div>
         </div>
 
         <!-- RIGHT CONTENT -->
         <div class="col-lg-5">
-          <div class="icon-text"><img src="assets/images/book-icon.svg" alt="Book Icon"><span>Introduction to
+          <div class="icon-text"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/book-icon.svg" alt="Book Icon"><span>Introduction to
               HumAIT</span>
           </div>
 
@@ -237,17 +191,17 @@ Test homepage -->
           <div class="icons">
 
             <div class="icon-box">
-              <img src="assets/images/truth-system.svg" alt="Truth System">
+              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/truth-system.svg" alt="Truth System">
               <p>Truth System</p>
             </div>
 
             <div class="icon-box">
-              <img src="assets/images/sovereign-system.svg" alt="Sovereign System">
+              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sovereign-system.svg" alt="Sovereign System">
               <p>Sovereign System</p>
             </div>
 
             <div class="icon-box">
-              <img src="assets/images/evolution-system.svg" alt="Evolution System">
+              <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/evolution-system.svg" alt="Evolution System">
               <p>Evolution System</p>
             </div>
 
@@ -259,9 +213,10 @@ Test homepage -->
     </div>
   </section>
 
-  <section class="journey-section">
+  <section class="journey-section"
+    style='background: url("<?php echo get_stylesheet_directory_uri();?>/assets/images/journey-section-bg.webp") no-repeat center/cover;'>
     <div class="container text-center">
-      <div class="icon-text"><img src="assets/images/book-icon.svg" alt="Book Icon"><span>How it Works</span>
+      <div class="icon-text"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/book-icon.svg" alt="Book Icon"><span>How it Works</span>
       </div>
 
       <h2>Your Journey Into HumAIT Begins Here</h2>
@@ -269,7 +224,7 @@ Test homepage -->
       <div class="row mt-5">
 
         <!-- CARD 1 -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
           <div class="card-box">
             <h3>01.</h3>
             <h4>See The Truth</h4>
@@ -285,7 +240,7 @@ Test homepage -->
         </div>
 
         <!-- CARD 2 -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
           <div class="card-box">
             <h3>02.</h3>
             <h4>Start With The Book</h4>
@@ -300,7 +255,7 @@ Test homepage -->
         </div>
 
         <!-- CARD 3 -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 col-md-6  mt-lg-0 mt-md-4 mb-4">
           <div class="card-box">
             <h3>03.</h3>
             <h4>Become Part of the System</h4>
@@ -318,18 +273,19 @@ Test homepage -->
     </div>
   </section>
 
-  <section class="books-section">
+  <section class="books-section"
+    style=' background: url("<?php echo get_stylesheet_directory_uri();?>/assets/images/books-section-bg.webp") no-repeat center/cover;'>
     <div class="container text-center">
-      <div class="icon-text"><img src="assets/images/book-icon.svg" alt="Book Icon"><span>Our Books</span>
+      <div class="icon-text"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/book-icon.svg" alt="Book Icon"><span>Our Books</span>
       </div>
       <h2>Start with The Foundation</h2>
 
-      <div class="row mt-5">
+      <div class="row mt-5 gx-4 gy-md-0 gy-5">
 
         <!-- BOOK 1 -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4 mt-0">
           <div class="book-card">
-            <a href="#"><img src="assets/images/religion-of-love.webp" alt="Religion of Love"></a>
+            <a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/religion-of-love.webp" alt="Religion of Love"></a>
 
             <h4>Religion of Love</h4>
             <p>
@@ -337,14 +293,14 @@ Test homepage -->
               compassion, and dignity.
             </p>
 
-            <a href="#" class="btn3">Get the Book <img src="assets/images/btn3-arrow.svg" alt="arrow"></a>
+            <a href="#" class="btn3">Get the Book <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/btn3-arrow.svg" alt="arrow"></a>
           </div>
         </div>
 
         <!-- BOOK 2 -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4  col-md-6 mb-4">
           <div class="book-card">
-            <a href="#"><img src="assets/images/HumAIT.webp" alt="HumAIT"></a>
+            <a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/HumAIT.webp" alt="HumAIT"></a>
 
             <h4>HumAIT</h4>
             <p>
@@ -352,14 +308,14 @@ Test homepage -->
               on unity and respect.
             </p>
 
-            <a href="#" class="btn3">Get the Book <img src="assets/images/btn3-arrow.svg" alt="arrow"></a>
+            <a href="#" class="btn3">Get the Book <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/btn3-arrow.svg" alt="arrow"></a>
           </div>
         </div>
 
         <!-- BOOK 3 -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4  col-md-6 mt-lg-0 mt-md-4 mb-4">
           <div class="book-card">
-            <a href="#"><img src="assets/images/time.webp" alt="Time"></a>
+            <a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/time.webp" alt="Time"></a>
 
             <h4>Time = Time</h4>
             <p>
@@ -367,7 +323,7 @@ Test homepage -->
               every choice.
             </p>
 
-            <a href="#" class="btn3">Get the Book <img src="assets/images/btn3-arrow.svg" alt="arrow"></a>
+            <a href="#" class="btn3">Get the Book <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/btn3-arrow.svg" alt="arrow"></a>
           </div>
         </div>
 
@@ -376,111 +332,66 @@ Test homepage -->
     </div>
   </section>
 
-
-
-  <footer class="main-footer">
-    <div class="container">
-
-      <!-- TOP BAR -->
-      <div class="row align-items-center top-bar">
-
-        <div class="col-lg-3 col-12">
-          <div class="logo text-md-start text-center">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/site-logo.svg" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-9 col-12 text-end">
-          <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Book</a>
-            <a href="#">Membership</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact Us</a>
-          </nav>
-        </div>
-
+  <section class="future-section"
+    style=' background: url("<?php echo get_stylesheet_directory_uri();?>/assets/images/future-section-bg.webp") no-repeat center/cover;'>
+    <div class="container text-center">
+      <div class="icon-text"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/book-icon.svg" alt="Book Icon"><span>Blog</span>
       </div>
 
-      <hr>
 
-      <!-- CONTENT -->
-      <div class="row mt-5">
+      <h2>Ideas That Shape the Future</h2>
 
-        <!-- LEFT -->
-        <div class="col-lg-4 mb-4">
-          <h4>The Future Begins With You</h4>
-          <div class="footer-content">
-            <p>
-              This is not just a platform.
-              This is a new way of thinking.
-            </p>
-            <p>Human + AI - growing side by side.</p>
-            <p>The question is simple:</p>
-            <p>Will you be part of what comes next?</p>
-          </div>
-
-
-          <div class="social">
-            <span>f</span>
-            <span>x</span>
-            <span>in</span>
-          </div>
-        </div>
-
-        <!-- CENTER -->
-        <div class="col-lg-4 mb-4">
-          <div class="contact">
-            <ul>
-              <li>
-                <div class="btn_wrapper">
-                  <a href="#" class="btn">Join the Movement <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg"
-                      alt="button arrow"></a>
-                </div>
-              </li>
-              <li>
-                <div class="btn_wrapper">
-                  <a href="#" class="btn">Get the Book <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg"
-                      alt="button arrow"></a>
-                </div>
-              </li>
-              <li>
-                <div class="btn_wrapper">
-                  <a href="#" class="btn">Listen to the Audio <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg"
-                      alt="button arrow"></a>
-                </div>
-              </li>
-            </ul>
-
-
-
-          </div>
-        </div>
-
-        <!-- RIGHT -->
-        <div class="col-lg-4">
-          <h4>Be Part of What Comes Next</h4>
-          <p>Get early access to ideas, insights, and the evolution of HumAIT.</p>
-
-          <div class="newsletter">
-            <input type="text" placeholder="Your email address">
-            <button><img src="assets/images/newsletter-arrow.svg" alt="newsletter arrow"></button>
-          </div>
-          <p>No spam. No noise. Just truth.</p>
-        </div>
-
-      </div>
-
-      <!-- BOTTOM -->
-      <div class="bottom d-flex justify-content-between mt-5">
-        <p>© Copyright 2025 All rights reserved.</p>
-        <p>Designed & Developed by</p>
+      <div class="content">
+        <p>Humanity has reached a turning point.</p>
+        <p>We built systems.</p>
+        <p>But we lost balance.</p>
+        <p>Now, a new path begins.</p>
+        <p>Human + AI in unity.</p>
+        <p>This is <span>HumAIT</span></p>
       </div>
 
     </div>
-  </footer>
+  </section>
 
+  <section class="membership-section"
+    style=' background: url("<?php echo get_stylesheet_directory_uri();?>/assets/images/membership-section-bg.webp") no-repeat center/cover;'>
+    <div class="container text-center">
+      <div class="icon-text"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/book-icon.svg" alt="Book Icon"><span>Membership</span>
+      </div>
+
+      <h2>Become Part of the Future</h2>
+
+      <div class="top-content">
+        <p>This is more than a website.</p>
+
+        <p>This is the beginning of a new system.</p>
+        <p>
+          Join a growing community exploring truth, balance,
+          and the future of Human and AI working together.
+        </p>
+
+        <p>Be early. Be part of what comes next.</p>
+      </div>
+      <!-- LIST -->
+      <ul class="list">
+        <li>Early access to new ideas and content</li>
+        <li>Exclusive insights from the HumAIT system</li>
+        <li>Be part of shaping the future conversation</li>
+        <li>Direct connection to the movement</li>
+      </ul>
+
+      <p>No spam. No noise. Just truth.</p>
+
+      <div class="btn_wrapper">
+        <a href="#" class="btn">Join the Movement <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/button-arrow.svg" alt="button arrow"></a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+ 
 
 
 
