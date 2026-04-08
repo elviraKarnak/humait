@@ -9,7 +9,7 @@ $homeBannerLeftBtn = get_field('button_left_hb_bl');
 $homeBannerBookImg = get_field('book_image_hb_bl');
 $homeBannerCoverImg = get_field('background_image_hb_bl');
 
-$homeBannerCoverImgUrl = $homeBannerCoverImg['url'] ? $homeBannerCoverImg['url'] : get_stylesheet_directory_uri() . '/assets/images/hero-section-bg.webp';
+$homeBannerCoverImgUrl = !empty($homeBannerCoverImg['url']) ? $homeBannerCoverImg['url'] : get_stylesheet_directory_uri() . '/assets/images/hero-section-bg.webp';
 
 $buttonArrow = get_field('button_arrow_opl', 'option');
 $buttonArrowUrl = $buttonArrow ? $buttonArrow['url'] : get_stylesheet_directory_uri() . '/assets/images/button-arrow.svg';
@@ -22,7 +22,7 @@ $buttonArrowWidth = $buttonArrow ? $buttonArrow['width'] : '11';
 
 
 
-<?php if(!empty($homeBannerTitle) || !empty($homeBannerDescription) || !empty($homeBannerDescription_2) || !empty($homeBannerRightBtn) || !empty($homeBannerLeftBtn) || !empty($homeBannerBookImg) || !empty($homeBannerCoverImg) ): ?>
+<?php if(!empty($homeBannerTitle) || !empty($homeBannerDescription) || !empty($homeBannerDescription_2) || !empty($homeBannerRightBtn) || !empty($homeBannerLeftBtn) || !empty($homeBannerBookImg) || !empty($homeBannerCoverImgUrl) ): ?>
     <section class="hero-section"
     style='background: url("<?php echo $homeBannerCoverImgUrl; ?>") no-repeat center/cover;'>
     <div class="container">
