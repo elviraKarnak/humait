@@ -104,17 +104,17 @@ if (!defined('ABSPATH')) {
 							<span>English</span>
 						</div>
 
-						<!-- <ul>
+						<ul>
 							<li>
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/usa-flag.svg" alt="usa flag"> English
 							</li>
-							<li>
+							<!-- <li>
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/france.webp" alt="france"> French
 							</li>
 							<li>
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/spain.webp" alt="spain"> Spanish
-							</li>
-						</ul> -->
+							</li> -->
+						</ul>
 					</div>
 
 					<!-- BUTTON -->
