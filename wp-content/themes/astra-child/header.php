@@ -62,11 +62,83 @@ if (!defined('ABSPATH')) {
 		// astra_content_before();
 		?>
 
-
-
-
-
-
 	<div id="content" class="site-content">
 		<div class="ast-container-main">
 			<?php astra_content_top(); ?>
+
+			<header class="main-header">
+				<div class="container">
+
+					<!-- LEFT MENU -->
+					<nav class="menu">
+						<div class="menu-close">✕</div>
+						<?php
+							wp_nav_menu(
+							array(
+								'container' => '',
+								'container_class' => '',
+								'container_id' => '',
+								'items_wrap' => '<ul id="%1$s menu" class="%2$s primary_menu ">%3$s</ul>',
+								'theme_location' => 'menu-1',
+							)
+							);
+						?>
+					</nav>
+
+					 <?php if(has_custom_logo()){
+                        echo "<div class='logo'>";
+                		the_custom_logo(); 
+						echo "</div>";
+              		}
+
+              			?>
+					<!-- LOGO -->
+			
+					<!-- RIGHT SIDE -->
+					<div class="right">
+
+					<!-- LANGUAGE DROPDOWN -->
+					<div class="lang-dropdown">
+						<div class="selected">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/usa-flag.svg" alt="usa flag">
+							<span>English</span>
+						</div>
+
+						<!-- <ul>
+							<li>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/usa-flag.svg" alt="usa flag"> English
+							</li>
+							<li>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/france.webp" alt="france"> French
+							</li>
+							<li>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/spain.webp" alt="spain"> Spanish
+							</li>
+						</ul> -->
+					</div>
+
+					<!-- BUTTON -->
+					<div class="btn_wrapper">
+						<?php
+							wp_nav_menu(
+							array(
+								'container' => '',
+								'container_class' => '',
+								'container_id' => '',
+								'items_wrap' => '<ul id="%1$s menu" class="%2$s primary_menu ">%3$s</ul>',
+								'theme_location' => 'primary',
+							)
+							);
+						?>
+						<!-- <a href="#" class="btn">Get the Book <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow"></a> -->
+					</div>
+					<!-- TOGGLE BUTTON -->
+					<div class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					</div>
+				</div>
+			</div>
+		</header>
