@@ -137,7 +137,7 @@ if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($de
             <div class="contact">
               <ul>
 
-                  <?php while (have_rows('buttons_footer_humait')) : the_row(); 
+                  <?php while (have_rows('buttons_footer_humait', 'option')) : the_row(); 
                   
                       $ftrBtn = get_sub_field('button_footer_humait');
                   ?>
