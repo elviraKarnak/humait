@@ -1,6 +1,4 @@
 <?php
-
-
 $infoTitle = get_field('info_title_scbg');
 $infoImg = get_field('info_global_icon', 'option');
 $sectionTitle = get_field('title_scbg');

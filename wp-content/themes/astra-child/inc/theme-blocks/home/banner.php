@@ -1,6 +1,5 @@
 <?php 
 
-
 $homeBannerTitle = get_field('title_hb_bl');
 $homeBannerDescription = get_field('description_hb_bl_1');
 $homeBannerDescription_2 = get_field('description_hb_bl_2');
@@ -17,10 +16,7 @@ $buttonArrowUrl = $buttonArrow ? $buttonArrow['url'] : get_stylesheet_directory_
 $buttonArrowHeight = $buttonArrow ? $buttonArrow['height'] : '11';
 $buttonArrowWidth = $buttonArrow ? $buttonArrow['width'] : '11';
 
-
 ?>
-
-
 
 <?php if(!empty($homeBannerTitle) || !empty($homeBannerDescription) || !empty($homeBannerDescription_2) || !empty($homeBannerRightBtn) || !empty($homeBannerLeftBtn) || !empty($homeBannerBookImg) || !empty($homeBannerCoverImgUrl) ): ?>
     <section class="hero-section"

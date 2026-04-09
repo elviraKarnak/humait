@@ -14,18 +14,6 @@
  */
 define( 'CHILD_THEME_ASTRA_CHILD_VERSION', '1.0.0' );
 
-/**
- * Enqueue styles
- */
-function child_enqueue_styles() {
-
-	wp_enqueue_style( 'astra-child-theme-css', get_stylesheet_directory_uri() . '/style.css', array('astra-theme-css'), CHILD_THEME_ASTRA_CHILD_VERSION, 'all' );
-
-}
-
-add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
-
-
 // style sheet & scripts
 
 function humait_enqueue(){
@@ -73,8 +61,6 @@ function humait_enqueue(){
 
   add_action( 'wp_enqueue_scripts', 'humait_enqueue' );
 
-
-
 // register navs
 register_nav_menus(
 	array(
@@ -85,7 +71,7 @@ register_nav_menus(
 );
 
 	// theme support
-if ( ! function_exists( 'humait_setup_theme' ) ) {
+if (!function_exists('humait_setup_theme')) {
 
 	function humait_setup_theme() {
 
@@ -95,14 +81,6 @@ if ( ! function_exists( 'humait_setup_theme' ) ) {
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'align-wide' );
-
-		// WooCommerce support
-		add_theme_support( 'woocommerce' );
-
-		// Optional (recommended)
-		add_theme_support( 'wc-product-gallery-zoom' );
-		add_theme_support( 'wc-product-gallery-lightbox' );
-		add_theme_support( 'wc-product-gallery-slider' );
 	}
 
 }
