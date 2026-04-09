@@ -4,7 +4,7 @@ $book_query = new WP_Query([
   'post_type'      => 'book',
   'posts_per_page' => 10,
   'orderby'        => 'ID',
-  'order'          => 'DESC',
+  'order'          => 'ASC',
 ]);
                                     
 
@@ -46,27 +46,28 @@ $sectionBgImg = get_field('section_background_book_blok');
             ?>
 
               <!-- BOOK 1 -->
-              <div class="col-lg-4 col-md-6 mb-4 mt-0">
-                <div class="book-card">
-                 <?php if(has_post_thumbnail()){ ?> 
-                    <a href="<?php echo $book_link; ?>">
-                      <?php the_post_thumbnail('full'); ?>
-                    </a>
+                <div class="col-lg-4 col-md-6 mb-4 mt-0">
+                  <div class="book-card">
+                  <?php if(has_post_thumbnail()){ ?> 
+                      <a href="<?php echo $book_link; ?>">
+                        <?php the_post_thumbnail('full'); ?>
+                      </a>
 
-                  <?php } ?>
+                    <?php } ?>
 
-                  <?php if($book_title): ?>
+                    <?php if($book_title): ?>
 
-                   <a href="<?php echo $book_link; ?>"><h4><?php echo $book_title; ?></h4></a>
-                  <?php endif; ?>
-                  <?php if($book_description): ?>
-                    <p><?php echo $book_description; ?></p>
-                  <?php endif; ?>
+                    <a href="<?php echo $book_link; ?>"><h4><?php echo $book_title; ?></h4></a>
+                    <?php endif; ?>
+                    <?php if($book_description): ?>
+                      <p><?php echo $book_description; ?></p>
+                    <?php endif; ?>
 
-                  <a href="<?php echo $book_link; ?>" class="btn3">
-                    <?php echo $bookReadMoreText ? $bookReadMoreText : 'Get the Book'; ?> 
-                  <img src="<?php echo $bookReadMoreArrow ? $bookReadMoreArrow['url'] : get_stylesheet_directory_uri() . '/assets/images/btn3-arrow.svg'; ?>" alt="arrow" height="11" width="11"></a> 
-                   
+                    <a href="<?php echo $book_link; ?>" class="btn3">
+                      <?php echo $bookReadMoreText ? $bookReadMoreText : 'Get the Book'; ?> 
+                    <img src="<?php echo $bookReadMoreArrow ? $bookReadMoreArrow['url'] : get_stylesheet_directory_uri() . '/assets/images/btn3-arrow.svg'; ?>" alt="arrow" height="11" width="11"></a> 
+                    
+                </div>
               </div>
            <?php endwhile; ?> 
 
