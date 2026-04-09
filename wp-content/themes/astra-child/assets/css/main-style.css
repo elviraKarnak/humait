@@ -196,7 +196,7 @@ svg {
 .btn img {
   margin-left: 10px;
 }
-.btn {
+.btn, #menu-header-right a {
   position: relative;
   padding: 15px 40px;
   font-size: var(--fs-18);
@@ -208,7 +208,7 @@ svg {
   border-radius: 12px;
   width: 100%;
 }
-.btn:hover {
+.btn:hover, #menu-header-right a:hover {
   color: var(--clr-FFFFFF);
 }
 .btn_wrapper.btn_wrapper2 {
