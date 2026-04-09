@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   // Menu toggle
   const toggle = document.querySelector(".menu-toggle");
   const menu = document.querySelector(".menu");
