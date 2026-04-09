@@ -27,6 +27,7 @@ add_action('acf/init', function () {
         'user-journey'  => 'User Journey',
         'book-block'  => 'Book Block',
         'home-blog'  => 'Home Blog',
+        'home-membership'  => 'Home Membership',
     ];
 
     
