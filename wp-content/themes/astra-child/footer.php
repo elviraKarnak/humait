@@ -225,7 +225,7 @@ if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($de
 	</div><!-- #page -->
 <?php
 	// astra_body_bottom();
-	// wp_footer();
+	wp_footer();
 ?>
 
 	</body>
