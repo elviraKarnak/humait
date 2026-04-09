@@ -26,6 +26,7 @@ add_action('acf/init', function () {
         'humait-architecture'  => 'HumAIT Architecture',
         'user-journey'  => 'User Journey',
         'book-block'  => 'Book Block',
+        'home-blog'  => 'Home Blog',
     ];
 
     
