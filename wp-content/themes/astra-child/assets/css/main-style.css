@@ -1158,6 +1158,28 @@ background-image: url('../images/button-arrow.svg');
 }
 /* footer end */
 
+/*** customizer css***/
+.site-content .ast-container{
+	display:block;
+	max-width:100%;
+	padding:0
+}
+.admin-bar #page{
+	min-height:unset
+}
+.primary_menu {
+  display: flex;
+  gap: 20px;
+}
+.main-header nav a:hover {
+  color: var(--clr-048AE5);
+}
+.main-footer .menu a:hover {
+  color: var(--clr-048AE5);
+}
+.main-header .btn_wrapper a{
+	display:block
+}
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 991px) {
@@ -1329,6 +1351,9 @@ background-image: url('../images/button-arrow.svg');
   }
 
   /* footer end */
+  .primary_menu{
+		flex-direction:column;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1496,6 +1521,10 @@ background-image: url('../images/button-arrow.svg');
   .main-header .btn img{
     margin-left: 5px;
     width: 8px;
+  }
+  .main-header .btn_wrapper a {
+   
+    padding-right: 27px;
   }
 }
 
