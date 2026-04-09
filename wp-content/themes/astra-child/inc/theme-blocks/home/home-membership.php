@@ -75,7 +75,7 @@ if (have_rows('list_items_hm')) {
       <?php endif; ?>
 
       <?php if (!empty($secBottomLine)) : ?>
-        <?php echo wp_kses_post($secBottomLine); ?>
+        <p><?php echo $secBottomLine; ?></p>
       <?php endif; ?>
 
       <?php if (!empty($secBtn)) : ?>
