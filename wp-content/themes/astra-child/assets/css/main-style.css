@@ -209,6 +209,9 @@ svg {
   border-radius: 12px;
   width: 100%;
 }
+.main-header .btn_wrapper a{
+  padding-right: 70px;
+}
 .main-header .btn_wrapper li:after{
   content: '';
   width: 11px;
@@ -219,6 +222,7 @@ background-image: url('../images/button-arrow.svg');
   background-repeat: no-repeat;
  right: 40px;
  top: calc(50% - 5px);
+ z-index: 2;
 }
 .btn:hover {
   color: var(--clr-FFFFFF);
@@ -1328,6 +1332,20 @@ background-image: url('../images/button-arrow.svg');
 }
 
 @media (max-width: 767px) {
+  .main-header .btn_wrapper li::after {
+   
+    width: 7px;
+    height: 7px;
+  
+    right: 10px;
+    top: calc(50% - 3px);
+    
+    background-size: contain;
+  }
+  .main-header .btn_wrapper a {
+   
+    padding-right: 27px;
+  }
   .main-header .lang-dropdown .selected span{
     font-size: 14px;
   }
