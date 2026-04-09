@@ -209,6 +209,13 @@ svg {
   border-radius: 12px;
   width: 100%;
 }
+.main-header .btn_wrapper a{
+background-image: url('https://humait.elvirainfotech.live/wp-content/uploads/2026/04/button-arrow.svg');
+  
+  background-repeat: no-repeat;
+  background-position: calc(100% - 40px) center;
+  padding-right: 69px;
+}
 .btn:hover {
   color: var(--clr-FFFFFF);
 }
@@ -263,7 +270,7 @@ svg {
   border-radius: 12px;
 }
 
-.btn:hover::after {
+.btn:hover::after, .main-header .btn_wrapper a:hover:after {
   transform: scaleX(1);
 }
 
@@ -1327,7 +1334,7 @@ svg {
     gap: 15px;
     padding: 0 12px !important;
   }
-  .main-header .btn {
+  .main-header .btn , .main-header .btn_wrapper a{
     padding: 7px 10px;
     font-size: 14px;
   }
@@ -1458,7 +1465,7 @@ svg {
 }
 
 @media (max-width: 575.98px) {
-  .main-header .btn{
+  .main-header .btn, .main-header .btn_wrapper a{
     padding: 7px 10px;
     font-size: 12px;
   }
