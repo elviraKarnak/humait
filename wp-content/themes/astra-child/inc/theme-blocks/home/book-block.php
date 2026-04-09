@@ -70,9 +70,6 @@ $sectionBgImg = get_field('section_background_book_blok');
               </div>
            <?php endwhile; ?> 
 
-        
-
-      </div>
     </section>
 
  <?php endif; wp_reset_query(); ?> 
