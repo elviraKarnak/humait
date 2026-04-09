@@ -130,7 +130,7 @@ if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($de
           <?php endif; ?>
 
               <?php
-          if(!empty($$footerButtons)): ?>
+          if(!empty($footerButtons)): ?>
 
           <!-- CENTER -->
           <div class="col-lg-4 mb-4">
