@@ -1,6 +1,6 @@
 <?php 
     $secInfoTitle = get_field('info_title_hm_ios_bl');
-    $secInfoImg = get_field('info_global_icon');
+    $secInfoImg = get_field('info_global_icon', 'option');
     $secTitle = get_field('title_sec_hm_ios_bl');
     $secDescription = get_field('description_sec_hm_ios_bl');
     $secBtn = get_field('button_sec_hm_ios_bl');

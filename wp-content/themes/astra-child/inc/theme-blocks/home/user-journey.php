@@ -1,6 +1,6 @@
 <?php
 $secInfoTitle = get_field('info_title_ujb');
-$secInfoImg = get_field('info_global_icon');
+$secInfoImg = get_field('info_global_icon', 'option');
 $secTitle = get_field('title_ujb');
 $secBgImg = get_field('section_background_ujb');
 

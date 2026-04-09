@@ -1,6 +1,6 @@
 <?php 
     $secInfoTitle = get_field('info_title_humit_arc');
-    $secInfoImg = get_field('info_global_icon');
+    $secInfoImg = get_field('info_global_icon', 'option');
     $secTitle = get_field('title_humit_arc');
     $secDescription = get_field('description_humit_arc');
     $secBtn = get_field('button_humit_arc');

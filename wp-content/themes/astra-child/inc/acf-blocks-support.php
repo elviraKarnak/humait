@@ -25,6 +25,7 @@ add_action('acf/init', function () {
         'gfc-humit'  => 'GFC Humit',  
         'humait-architecture'  => 'HumAIT Architecture',
         'user-journey'  => 'User Journey',
+        'book-block'  => 'Book Block',
     ];
 
     
