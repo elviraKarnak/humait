@@ -308,7 +308,9 @@ svg {
   font-size: var(--fs-18);
   color: var(--clr-FFFFFF);
 }
-
+.main-header nav a:hover {
+  color: var(--clr-048AE5);
+}
 .main-header .logo img {
   height: 120px;
 }
@@ -1008,7 +1010,9 @@ svg {
 .main-footer .menu a {
   color: var(--clr-FFFFFF);
 }
-
+.main-footer .menu a:hover{
+  color: var(--clr-048AE5);
+}
 .main-footer hr {
   border-color: var(--clr-4C4C4C);
 }
