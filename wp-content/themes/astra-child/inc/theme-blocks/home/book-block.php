@@ -39,7 +39,7 @@
             ?>
 
               <!-- BOOK 1 -->
-                <div class="col-lg-4 col-md-6 mb-4 mt-0">
+                <div class="col-lg-4 col-md-6 mb-4">
                   <div class="book-card">
                   <?php if(has_post_thumbnail()){ ?> 
                       <a href="<?php echo $book_link; ?>">

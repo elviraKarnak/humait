@@ -161,7 +161,7 @@ svg {
   max-width: 100%;
   padding: 0 50px;
 }
-.btn_wrapper {
+.btn_wrapper  {
   border-radius: 12px;
   background: rgba(0, 120, 255, 0.08);
   /* backdrop-filter: blur(15px); */
@@ -197,7 +197,7 @@ svg {
 .btn img {
   margin-left: 10px;
 }
-.btn {
+.btn,  .main-header .btn_wrapper a{
   position: relative;
   padding: 15px 40px;
   font-size: var(--fs-18);
@@ -235,7 +235,7 @@ svg {
   background: linear-gradient(180deg, #f5bd74 29.47%, #915617 65.84%);
 }
 
-.btn::before {
+.btn::before ,.main-header .btn_wrapper a::before{
   content: "";
   position: absolute;
   inset: 0;
@@ -251,7 +251,7 @@ svg {
   z-index: -1;
 }
 
-.btn::after {
+.btn::after ,.main-header .btn_wrapper a::after{
   content: "";
   position: absolute;
   inset: 0;
