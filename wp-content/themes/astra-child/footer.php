@@ -21,22 +21,39 @@ $title = get_field('title_footer_humait', 'option');
 $description = get_field('description__footer_humait', 'option');
 $footerSocials = get_field('social__footer_humait', 'option');
 
+// Footer Middle
+$footerButtons = get_field('buttons_footer_humait', 'option');
+
 // Footer Right
 $titleFr = get_field('title_fr_footer_humait', 'option');
 $descriptionFr = get_field('description_fr_footer_humait', 'option');
 $newsLetter = get_field('form_shortcode_footer_humait', 'option');
 $newsLetterText = get_field('form_description_footer_humait', 'option');
 
+$footerBackgroundImg = get_field('footer_background_img');
+
+$footerBackgroundImg = !empty($footerBackgroundImg['url']) ? $footerBackgroundImg['url'] : get_stylesheet_directory_uri() . '/assets/images/footer-bg.webp';
+
+
+
+
+
 $copyrightText = get_field('copyright_footer_humait', 'option');
 $developerText = get_field('developer_text', 'option');
 $developerLink = get_field('developer_link', 'option');
 $developerImage = get_field('developer_image', 'option');
 
+$buttonArrow = get_field('button_arrow_opl', 'option');
+$buttonArrowUrl = $buttonArrow ? $buttonArrow['url'] : get_stylesheet_directory_uri() . '/assets/images/button-arrow.svg';
+
+$buttonArrowHeight = $buttonArrow ? $buttonArrow['height'] : '11';
+$buttonArrowWidth = $buttonArrow ? $buttonArrow['width'] : '11';
+
 
 
 if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($description) || !empty($titleFr) || !empty($descriptionFr) || !empty($newsLetter) || !empty($newsLetterText) || !empty($copyrightText) || !empty($developerText) || !empty($developerLink) || !empty($developerImage)): ?>
 
-  <footer class="main-footer" style=' background: url("<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-bg.webp") no-repeat center/cover;'>
+  <footer class="main-footer" style=' background: url("<?php echo $footerBackgroundImg; ?>") no-repeat center/cover;'>
     <div class="container">
 
       <!-- TOP BAR -->
@@ -63,7 +80,7 @@ if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($de
                 'container_class' => '',
                 'container_id' => '',
                 'items_wrap' => '<ul id="%1$s menu" class="%2$s footer_menu ">%3$s</ul>',
-                'theme_location' => 'menu-3',
+                'theme_location' => 'menu-2',
               )
               );
           ?>
@@ -95,7 +112,7 @@ if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($de
             <?php if (!empty($description)) : ?>
             
             <div class="footer-content">
-              <?php echo esc_html($description); ?>
+              <?php echo $description; ?>
             </div>
             <?php endif; ?>
 
@@ -112,52 +129,81 @@ if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($de
           </div>
           <?php endif; ?>
 
+              <?php
+          if(!empty($$footerButtons)): ?>
+
           <!-- CENTER -->
           <div class="col-lg-4 mb-4">
             <div class="contact">
               <ul>
+
+                  <?php while (have_rows('buttons_footer_humait')) : the_row(); 
+                  
+                      $ftrBtn = get_sub_field('button_footer_humait');
+                  ?>
                 <li>
                   <div class="btn_wrapper">
-                    <a href="#" class="btn">Join the Movement <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg"
-                        alt="button arrow"></a>
-                  </div>
+                        <a href="<?php echo $ftrBtn['url']; ?>" target='<?php echo $ftrBtn['target'] ? $ftrBtn['target'] : '_self'; ?>' class="btn">
+                            <?php echo $ftrBtn['title']; ?> 
+                            <img
+                                    src="<?php echo $buttonArrowUrl; ?>"
+                                    height="<?php echo $buttonArrowHeight; ?>"
+                                    width="<?php echo $buttonArrowWidth; ?>"
+                                    alt="button arrow" >
+                        </a>
+                    </div>
                 </li>
-                <li>
-                  <div class="btn_wrapper">
-                    <a href="#" class="btn">Get the Book <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow"></a>
-                  </div>
-                </li>
-                <li>
-                  <div class="btn_wrapper">
-                    <a href="#" class="btn">Listen to the Audio <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg"
-                        alt="button arrow"></a>
-                  </div>
-                </li>
+                <?php endwhile; ?>
+               
               </ul>
             </div>
           </div>
+          <?php endif; ?>
 
-          <!-- RIGHT -->
-          <div class="col-lg-3">
-            <h4>Be Part of What Comes Next</h4>
-            <p>Get early access to ideas, insights, and the evolution of HumAIT.</p>
+          <?php if(!empty($titleFr) || !empty($descriptionFr) || !empty($newsLetter) || !empty($newsLetterText) || !empty($copyrightText)): ?>
 
-            <div class="newsletter">
-              <input type="text" placeholder="Your email address">
-              <button><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/newsletter-arrow.svg" alt="newsletter arrow"></button>
+            <!-- RIGHT -->
+            <div class="col-lg-3">
+              <?php if (!empty($titleFr)) : ?>
+                <h4><?php echo $titleFr; ?></h4>
+              <?php endif; ?>
+
+              <?php if (!empty($descriptionFr)) : ?>
+                  <p><?php echo $descriptionFr; ?></p>
+              <?php endif; ?>
+            
+              <?php if (!empty($newsLetter)) : ?>
+                <div class="newsletter">
+                  <?php echo $newsLetter; ?>
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($newsLetterText)) : ?>
+              <p><?php echo $newsLetterText; ?></p>
+              <?php endif; ?>
             </div>
-            <p>No spam. No noise. Just truth.</p>
-          </div>
+          <?php endif; ?>
 
         </div>
       <?php endif; ?>
+      
+      <?php if (!empty($copyrightText) || !empty($developerText) || !empty($developerLink) || !empty($developerImage)) : ?>
       <!-- BOTTOM -->
-      <div class="bottom d-flex justify-content-between mt-5">
-        <p>© Copyright 2025 All rights reserved.</p>
-        <span>Designed & Developed by <a href="https://elvirainfotech.com/" target="_blank"><img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/elvira-logo.svg" alt="Elvira Logo"></a></span>
-      </div>
-
+          <div class="bottom d-flex justify-content-between mt-5">
+            <?php if (!empty($copyrightText)) : ?>
+              <p><?php echo $copyrightText; ?></p>
+            <?php endif; ?>
+            <?php if (!empty($developerText) || !empty($developerLink) || !empty($developerImage)) : ?>
+              <span>
+                <?php echo esc_html($developerText); ?>
+                <?php if (!empty($developerLink) && !empty($developerImage)) : ?>
+                  <a href="<?php echo esc_url($developerLink); ?>" target="_blank">
+                    <img src="<?php echo esc_url($developerImage['url']); ?>" alt="<?php echo esc_attr($developerImage['alt']); ?>" height="<?php echo esc_attr($developerImage['height']); ?>" width="<?php echo esc_attr($developerImage['width']); ?>">
+                  </a>
+                <?php endif; ?>
+              </span>
+             <?php endif; ?>
+          </div>
+        <?php endif; ?>
     </div>
   </footer>
 
@@ -181,8 +227,6 @@ if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($de
 	// astra_body_bottom();
 	// wp_footer();
 ?>
-
-
 
 	</body>
 </html>
