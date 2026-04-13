@@ -35,7 +35,7 @@
        
         <?php if(!empty($secInfoTitle) || !empty($secInfoImg) || !empty($secTitle) || !empty($secDescription) || !empty($secBtn)): ?>
         <!-- RIGHT CONTENT -->
-        <div class="col-lg-5">
+        <div class="col-lg-5 pb-md-5">
             <?php if($secInfoTitle || $secInfoImg): ?>
                 <div class="icon-text">
                 <?php if($secInfoImg): ?>
