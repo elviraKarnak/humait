@@ -20,7 +20,7 @@
     <section class="architecture-section"
     style='background: url("<?php echo $secBgImg['url']; ?>") no-repeat center/cover;'>
     <div class="container">
-        <div class="row align-items-center content-gap">
+        <div class="row align-items-center content-gap justify-content-end">
 
         <?php if($secImg){ ?>
             <!-- LEFT IMAGE -->
