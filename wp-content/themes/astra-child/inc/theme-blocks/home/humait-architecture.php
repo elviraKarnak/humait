@@ -20,17 +20,19 @@
     <section class="architecture-section"
     style='background: url("<?php echo $secBgImg['url']; ?>") no-repeat center/cover;'>
     <div class="container">
-        <div class="row align-items-center content-gap justify-content-end">
+        <div class="row align-items-center content-gap">
 
-        <?php if($secImg){ ?>
+       
             <!-- LEFT IMAGE -->
             <div class="col-lg-5 mb-4 mb-lg-0">
+            <?php if($secImg){ ?>
                 <div class="image-box">
                 <img src="<?php echo $secImg['url']; ?>"
                     alt="<?php echo $secImg['alt']; ?>" height="<?php echo $secImg['height']; ?>" width="<?php echo $secImg['width']; ?>">
                 </div>
+                <?php } ?>
             </div>
-        <?php } ?>
+       
         <?php if(!empty($secInfoTitle) || !empty($secInfoImg) || !empty($secTitle) || !empty($secDescription) || !empty($secBtn)): ?>
         <!-- RIGHT CONTENT -->
         <div class="col-lg-5">
