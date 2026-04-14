@@ -502,7 +502,7 @@ background-image: url('../images/button-arrow.svg');
   margin-bottom: 20px;
 }
 .hero-section .grad-border p {
-  width: 100%;
+  width: 100%;color: var(--clr-ECB154);
 }
 .hero-section p {
   margin: auto;
