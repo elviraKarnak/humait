@@ -503,6 +503,10 @@ background-image: url('../images/button-arrow.svg');
 }
 .hero-section .grad-border p {
   width: 100%;color: var(--clr-ECB154);
+  font-style: italic;
+}
+.hero-section p span{
+  color: var(--clr-ECB154);font-style: italic;
 }
 .hero-section p {
   margin: auto;
