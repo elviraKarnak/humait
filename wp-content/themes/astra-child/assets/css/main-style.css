@@ -1191,7 +1191,9 @@ background-image: url('../images/button-arrow.svg');
 	display:block
 }
 /* ================= RESPONSIVE ================= */
-
+@media (min-width:768px){
+  .architecture-section .rgt-sc{margin-top: 140px;}
+}
 @media (max-width: 991px) {
   /* header start */
 
