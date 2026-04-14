@@ -1205,6 +1205,14 @@ background-image: url('../images/button-arrow.svg');
 	display:block
 }
 /* ================= RESPONSIVE ================= */
+@media (min-width:1200px){
+  .main-header nav.menu,.main-header .right{
+    width: 40%;
+  }
+  .main-header .logo{
+    width: 20%;text-align: center;
+  }
+}
 @media (min-width:768px){
   .architecture-section .rgt-sc{padding-bottom: 140px;}
 }
