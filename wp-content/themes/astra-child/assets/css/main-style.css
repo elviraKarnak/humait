@@ -454,13 +454,13 @@ background-image: url('../images/button-arrow.svg');
 /* hero-section start */
 .hero-section  .top-sc p{
   font-family: var(--Forum-font);
-  text-align: center;
+  text-align: center;font-size: var(--fs-30);
 }
 .hero-section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   color: var(--clr-FFFFFF);
   position: relative;
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 80px;
   display: flex;
   align-items: end;
@@ -1435,10 +1435,10 @@ background-image: url('../images/button-arrow.svg');
   }
   
   .hero-section .hero-content {
-    padding-top: 40px;
+    padding-top: 25px;
   }
   .hero-section h1 {
-    line-height: 40px;
+    line-height: 40px;margin: 0;
   }
   .hero-section p {
     line-height: 30px;
