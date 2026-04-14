@@ -460,7 +460,7 @@ background-image: url('../images/button-arrow.svg');
   /* min-height: 100vh; */
   color: var(--clr-FFFFFF);
   position: relative;
-  padding-top: 100px;
+  padding-top: 140px;
   padding-bottom: 80px;
   display: flex;
   align-items: end;

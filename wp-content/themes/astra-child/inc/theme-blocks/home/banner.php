@@ -27,9 +27,6 @@ $buttonArrowWidth = $buttonArrow ? $buttonArrow['width'] : '11';
                <p> Another crisis.</p>
                <p> Another wave of inflation.</p>
 
-               <p> It doesn’t have to be this way.</p>
-
-               <p>A different future is possible.</p>
             </div>
             <div class="row align-items-center hero-content">
 
