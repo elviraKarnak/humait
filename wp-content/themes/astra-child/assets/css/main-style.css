@@ -989,7 +989,10 @@ background-image: url('../images/button-arrow.svg');
 .membership-section .top-content p {
   font-size: var(--fs-28);
   font-weight: 500;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+.membership-section .top-content p a:hover{
+  opacity: 0.7;
 }
 .membership-section .top-content p  a{color: white;}
 .membership-section .top-content p:nth-child(3) {
