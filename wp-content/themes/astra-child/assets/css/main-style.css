@@ -1209,6 +1209,9 @@ background-image: url('../images/button-arrow.svg');
   .main-header nav.menu,.main-header .right{
     width: 40%;
   }
+  .main-header .right{
+    justify-content: end;
+  }
   .main-header .logo{
     width: 20%;text-align: center;
   }
