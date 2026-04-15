@@ -21,45 +21,72 @@ $buttonArrowWidth = $buttonArrow ? $buttonArrow['width'] : '11';
 
 <?php if (!empty($lpBannerTitle) || !empty($lpBannerDescription) || !empty($lpBannerDescription_2) || !empty($lpBannerRightBtn) || !empty($lpBannerLeftBtn) || !empty($lpBannerBookImg) || !empty($lpBannerCoverImgUrl)): ?>
   <section class="hero-section landing-hero-section" style="
-        background: url('assets/images/landing-hero-banner.webp')
+        background: url('<?php echo $lpBannerCoverImgUrl; ?>')
           no-repeat center/cover;
       ">
     <div class="container">
       <div class="row align-items-end hero-content justify-content-between">
         <!-- LEFT -->
         <div class="col-lg-5 text-md-start text-center">
-          <h1>HumAIT - Building the Future of Human + AI Systems
-          </h1>
-
-          <p>
-            Before humanity reaches new worlds, we must build a system worthy of them.
-          </p>
+          <?php if (!empty($lpBannerTitle)): ?>
+            <h1><?php echo esc_html($lpBannerTitle); ?></h1>
+          <?php endif; ?>
+          <?php if (!empty($lpBannerDescription)): ?>
+            <p>
+              <?php echo esc_html($lpBannerDescription); ?>
+            </p>    
+          <?php endif; ?>
+          
+          <?php if (!empty($lpBannerDescription_2)): ?>
+      
           <div class="grad-border2">
-            <p>A mission to redesign human systems for a truthful, balanced, and unified future.</p>
+            <p> <?php echo esc_html($lpBannerDescription_2); ?></p>
           </div>
+          <?php endif; ?>
+          <?php if (!empty($lpBannerDescription_3)): ?>
           <div class="text">
             <p>
-              HumAIT is a forward-thinking initiative focused on redefining how humans and artificial intelligence work
-              together. By combining ethical AI systems, transparent governance, and decentralized participation, this
-              mission lays the foundation for a sustainable and unified future of humanity.
+              <?php echo esc_html($lpBannerDescription_3); ?>
             </p>
           </div>
+          <?php endif; ?>
+          <?php if (!empty($lpBannerRightBtn) || !empty($lpBannerLeftBtn)): ?>
           <div class="btns d-flex align-items-center flex-column flex-md-row gap-3">
-            <div class="btn_wrapper">
-              <a href="#" class="btn">Explore the Roadmap
-                <img src="./assets/images/button-arrow.svg" alt="button arrow" /></a>
-            </div>
-            <div class="btn_wrapper">
-              <a href="#" class="btn">Join the Movement
-                <img src="./assets/images/button-arrow.svg" alt="button arrow" /></a>
-            </div>
+            <?php if (!empty($lpBannerLeftBtn)): ?>
+              <div class="btn_wrapper">
+                <a href="<?php echo esc_url($lpBannerLeftBtn['url']); ?>"
+                  target='<?php echo esc_attr($lpBannerLeftBtn['target'] ? $lpBannerLeftBtn['target'] : '_self'); ?>'
+                  class="btn">
+                  <?php echo esc_html($lpBannerLeftBtn['title']); ?>
+                  <img src="<?php echo esc_url($buttonArrowUrl); ?>" height="<?php echo esc_attr($buttonArrowHeight); ?>"
+                    width="<?php echo esc_attr($buttonArrowWidth); ?>" alt="button arrow">
+                </a>
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($lpBannerRightBtn)): ?>
+              <div class="btn_wrapper">
+                <a href="<?php echo esc_url($lpBannerRightBtn['url']); ?>"
+                  target='<?php echo esc_attr($lpBannerRightBtn['target'] ? $lpBannerRightBtn['target'] : '_self'); ?>'
+                  class="btn">
+                  <?php echo esc_html($lpBannerRightBtn['title']); ?>
+                  <img src="<?php echo esc_url($buttonArrowUrl); ?>" height="<?php echo esc_attr($buttonArrowHeight); ?>"
+                    width="<?php echo esc_attr($buttonArrowWidth); ?>" alt="button arrow">
+                </a>
+              </div>
+            <?php endif; ?>
           </div>
+          <?php endif; ?>
         </div>
 
-        <!-- RIGHT -->
-        <div class="col-lg-6 text-end books">
-          <img src="assets/images/books2.webp" alt="books" />
-        </div>
+      <!-- RIGHT -->
+        <?php if (!empty($lpBannerBookImg)): ?>
+          <div class="col-lg-6 text-end books">
+            <img src="<?php echo esc_url($lpBannerBookImg['url']); ?>" alt="<?php echo esc_attr($lpBannerBookImg['alt']); ?>"
+              height="<?php echo esc_attr($lpBannerBookImg['height']); ?>"
+              width="<?php echo esc_attr($lpBannerBookImg['width']); ?>">
+          </div>  
+     <?php endif; ?>
+       
       </div>
     </div>
   </section>
