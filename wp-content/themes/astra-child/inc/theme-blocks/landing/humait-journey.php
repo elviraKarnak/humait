@@ -1,75 +1,68 @@
 <?php
-
-$lplwhTitle = get_field('title_lwh');
-$lplwhDescription = get_field('description_lwh');
-$lplwhListTitle = get_field('list_title_lwh');
-$lplwhListDescription = get_field('list_description_lwh');
-$lplwhListItems = get_field('list_items_lwh');
-
-$lpsecImg = get_field('section_image_lwh');
-$lpBannerCoverImg = get_field('section_cover_image_lwh');
-
-$lpBannerCoverImgUrl = !empty($lpBannerCoverImg['url']) ? $lpBannerCoverImg['url'] : get_stylesheet_directory_uri() . 'assets/images/humai-section-bg.webp'; 
+  
+  $secTitle = get_field('title_lphj');
+  $secDescription = get_field('description_lphj');
+  $secBackgroundImg = get_field('section_cover_image_lphj');
   
   ?>
-
-  <?php if (!empty($lplwhTitle) || !empty($lplwhDescription) || !empty($lplwhListTitle) || !empty($lplwhListDescription) || !empty($lplwhListItems) || !empty($lpsecImg) || !empty($lpBannerCoverImgUrl)): ?>
-  <section class="truth-section humai-section" style="
-        background: url('<?php echo $lpBannerCoverImgUrl; ?>')
+    <?php if (!empty($secTitle) || !empty($secDescription) || !empty($secBackgroundImg)): ?>
+  <section class="journey-section roadmap-section" style="
+        background: url('assets/images/roadmap-section-bg.webp')
           no-repeat center/cover;
       ">
     <div class="container">
 
-    <?php if (!empty($lplwhTitle) || !empty($lplwhDescription)): ?>
-      <!-- Top Heading -->
-      <div class="row text-center">
-        <div class="col-lg-10 mx-auto">
-          <div class="top-bar">
-            <?php if (!empty($lplwhTitle)): ?>
-              <h2><?php echo esc_html($lplwhTitle); ?></h2> 
-            <?php endif; ?>
-            <?php if (!empty($lplwhDescription)): ?>
-              <p><?php echo esc_html($lplwhDescription); ?></p> 
-            <?php endif; ?>
-          </div>
-        </div>
-      </div>
-        <?php endif; ?>
+    <?php if (!empty($secTitle) || !empty($secDescription)): ?>
+        <!-- Heading -->
+        <div class="row text-center">
+            <div class="col-lg-10 mx-auto">
+                <?php if (!empty($secTitle)): ?>
+                    <h2><?php echo esc_html($secTitle); ?></h2>
 
-      <!-- Content Row -->
-      <div class="row align-items-center justify-content-between mt-5">
+                <?php endif; ?>
+                <?php if (!empty($secDescription)): ?>
+                    <p><?php echo esc_html($secDescription); ?></p>
+                <?php endif; ?>
 
-      <?php if (!empty($lpsecImg)): ?>
-        <!-- Image -->
-        <div class="col-lg-5 mb-4 mb-lg-0">
-          <div class="humai-img">
-            <img src="<?php echo esc_url($lpsecImg['url']); ?>" alt="<?php echo esc_attr($lpsecImg['alt']); ?>" height="<?php echo esc_attr($lpsecImg['height']); ?>" width="<?php echo esc_attr($lpsecImg['width']); ?>">
-          </div>
-        </div>
-        <?php endif; ?>
 
-        <!-- Text Content -->
-        <div class="col-lg-6">
-          <div class="humai-content">
-            <?php if (!empty($lplwhListTitle)): ?>
-              <h3><?php echo esc_html($lplwhListTitle); ?></h3>
-            <?php endif; ?>
-            <?php if (!empty($lplwhListDescription)): ?>
-              <p><?php echo esc_html($lplwhListDescription); ?></p>
-                
-            <?php endif; ?>
-   
-   
-                <?php if (!empty($lplwhListItems)): ?>
-                             <div class="list">
-                                <?php echo $lplwhListItems; ?>
-         
             </div>
-            <?php endif; ?>
-          </div>
         </div>
+        <?php endif; ?>
 
+      <?php if(have_rows('humit_journey_lphj')): ?>
+
+      <!-- Timeline -->
+      <div class="roadmap-wrapper ">
+
+        <!-- Row 1 -->
+        <div class="row g-5 justify-content-center roadmap-row">
+
+
+        <?php while(have_rows('humit_journey_lphj')): the_row();
+        
+         $title = get_sub_field('title_stpj');
+         $description = get_sub_field('description_stpj');
+         $steps = get_sub_field('steps_stpj');
+        
+        ?>
+          <div class="col-xl-3 col-md-6">
+            <div class="roadmap-card">
+              <?php if($steps): ?>
+              <span><?php echo $steps; ?></span>
+              <?php endif; ?>
+              <?php if($title): ?>
+                <h4><?php echo $title; ?></h4>
+              <?php endif; ?>
+              <?php if($description): ?>
+                <p><?php echo $description; ?></p>
+              <?php endif; ?>
+            </div>
+          </div>
+          <?php endwhile; ?>
+
+        </div>
       </div>
+      <?php endif; ?>
     </div>
   </section>
-<?php endif; ?>
+    <?php endif; ?>
