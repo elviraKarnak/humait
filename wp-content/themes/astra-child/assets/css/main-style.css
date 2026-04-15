@@ -1058,7 +1058,7 @@ background-image: url('../images/button-arrow.svg');
   position: relative;
   z-index: 1;
 }
-.main-footer:after{
+/* .main-footer:after{
   content: '';
   width: 100%;
   height: 100%;
@@ -1068,7 +1068,7 @@ background-image: url('../images/button-arrow.svg');
   left: 0;
   top: 0;
   height: 100%;
-}
+} */
 .main-footer .top-bar {
   margin-bottom: 50px;
 }
