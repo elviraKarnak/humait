@@ -3,11 +3,13 @@
   $secTitle = get_field('title_lphj');
   $secDescription = get_field('description_lphj');
   $secBackgroundImg = get_field('section_cover_image_lphj');
+
+  $lpBannerCoverImgUrl = !empty($lpBannerCoverImg['url']) ? $lpBannerCoverImg['url'] : get_stylesheet_directory_uri() . 'assets/images/roadmap-section-bg.webp';
   
   ?>
     <?php if (!empty($secTitle) || !empty($secDescription) || !empty($secBackgroundImg)): ?>
   <section class="journey-section roadmap-section" style="
-        background: url('assets/images/roadmap-section-bg.webp')
+        background: url('<?php echo $lpBannerCoverImgUrl ?>')
           no-repeat center/cover;
       ">
     <div class="container">
