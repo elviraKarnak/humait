@@ -30,7 +30,7 @@ $descriptionFr = get_field('description_fr_footer_humait', 'option');
 $newsLetter = get_field('form_shortcode_footer_humait', 'option');
 $newsLetterText = get_field('form_description_footer_humait', 'option');
 
-$footerBackgroundImg = get_field('footer_background_img');
+$footerBackgroundImg = get_field('footer_background_img', 'option');
 
 $footerBackgroundImg = !empty($footerBackgroundImg['url']) ? $footerBackgroundImg['url'] : get_stylesheet_directory_uri() . '/assets/images/footer-bg.webp';
 
