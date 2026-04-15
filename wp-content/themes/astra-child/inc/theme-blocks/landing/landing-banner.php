@@ -3,7 +3,7 @@
 $lpBannerTitle = get_field('title_lpb');
 $lpBannerDescription = get_field('description_lpb_1');
 $lpBannerDescription_2 = get_field('description_lpb_2');
-$lpBannerDescription_3 = get_field('description_lpb_2');
+$lpBannerDescription_3 = get_field('description_lpb_3');
 $lpBannerRightBtn = get_field('button_right_lb_bl');
 $lpBannerLeftBtn = get_field('button_left_lb_bl');
 $lpBannerBookImg = get_field('book_image_lb_bl');
