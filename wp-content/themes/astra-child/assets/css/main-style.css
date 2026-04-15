@@ -1211,6 +1211,362 @@ background-image: url('../images/button-arrow.svg');
 .main-header .btn_wrapper a{
 	display:block
 }
+
+
+
+/******************** Landing page start ********************/
+
+/* landing-hero-section start */
+
+.landing-hero-section .books img{
+  position: static;
+  width: 100%;
+}
+.landing-hero-section p{
+margin: 0;
+width: 100%;
+}
+.landing-hero-section .text p{
+  font-size: var(--fs-18);
+  line-height: 30px;
+  margin: 0;
+}
+
+.landing-hero-section .grad-border2 {
+    position: relative;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 40px 0;
+    z-index: 1;
+}
+
+.landing-hero-section  .grad-border2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px; 
+    background: linear-gradient(
+        90deg,
+        rgba(10, 125, 204, 0) -12.45%,
+        #0A7DCC 51.16%,
+        rgba(10, 125, 204, 0) 116%
+    );
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+@media (max-width: 1420px) and (min-width: 1310px) {
+  .landing-hero-section .hero-content .btn {
+    padding: 13px 26px;
+  }
+}
+
+@media (max-width: 1309px) and (min-width: 1215px) {
+  .landing-hero-section .hero-content .btn {
+    padding: 12px 20px;
+  }
+}
+
+/* landing-hero-section end */
+
+/* humai-section start */
+
+
+.humai-section.truth-section .container{
+      flex-direction: column;
+}
+.humai-section h2 {
+  font-size: var(--fs-48);
+  color: var(--clr-FFFFFF);
+  margin-bottom: 15px;
+}
+
+.humai-section .humai-img {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.humai-section .humai-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.humai-section .humai-content h3 {
+  font-size: var(--fs-48);
+  color: var(--clr-FFFFFF);
+  margin-bottom: 15px;
+}
+
+.humai-section .humai-content p {
+  margin-bottom: 40px;
+}
+.humai-section .list ul{
+  margin: 30PX 0;
+}
+.humai-section .list ul li{
+  font-size: var(--fs-18);
+  margin-bottom: 25px;
+}
+
+
+.humai-section .top-bar {
+  position: relative;
+  padding: 50px;
+}
+
+.humai-section .top-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 125, 204, 0) 0%,
+    #0A7DCC 49.52%,
+    rgba(10, 125, 204, 0) 100%
+  );
+}
+
+.humai-section .top-bar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 125, 204, 0) 0%,
+    #0A7DCC 49.52%,
+    rgba(10, 125, 204, 0) 100%
+  );
+}
+
+/* humai-section end */
+
+/* roadmap-section start */
+
+.roadmap-section h2 {
+  margin-bottom: 20px;
+}
+.roadmap-section .roadmap-wrapper {
+padding-top: 60px;
+}
+
+.roadmap-section .roadmap-card {
+  position: relative;
+  height: 100%;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  
+}
+@media (min-width:1200px){
+.roadmap-section .roadmap-card:after{
+  content: '';
+    position: absolute;
+    top: 14px;
+    width: calc(100% - 72px);
+    height: 0;
+    right: 0;
+    border-top: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, rgba(210, 233, 247, 0) -12.45%, #0A7DCC 51.16%);
+
+   
+
+}
+.roadmap-wrapper  .row > div:nth-child(4) .roadmap-card:before{
+  content: '';
+  border: none;
+  height: 120%;
+  background-color: var(--clr-0A7DCC);
+  transform: unset;
+  width: 2px;
+
+}
+.roadmap-section .roadmap-card:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 14px;
+  width: 16px;
+  height: 16px;
+  border-top: 3px solid #2c7ecb;
+  border-right: 3px solid #2c7ecb;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.roadmap-wrapper  .row > div:nth-child(6) .roadmap-card:before,
+.roadmap-wrapper  .row > div:nth-child(7) .roadmap-card:before,
+.roadmap-wrapper  .row > div:nth-child(5) .roadmap-card:before{
+    right: calc(100% - 95px);
+    transform: translateY(-50%) rotate(-129deg);
+}
+.roadmap-wrapper  .row > div:nth-child(6) .roadmap-card:after,
+.roadmap-wrapper  .row > div:nth-child(5) .roadmap-card:after{
+    top: 13px;
+    width: calc(100% - 78px);
+   
+    transform: rotate(180deg);
+   
+    
+}
+.roadmap-wrapper  .row > div:nth-child(7) .roadmap-card:after{
+top: 13px;
+    width: calc(157% - 78px);
+    transform: rotate(180deg);
+    border-top: 2px solid #2c7ecb;
+    border-image: unset;
+    right: unset;
+    left: 80px;
+}
+}
+.roadmap-section .roadmap-card span {
+  font-size: var(--fs-20);
+    font-family: var(--red-hat-font);
+    font-weight: 700;
+    background: linear-gradient(180deg, #d2e9f7 0%, #2f78d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  margin-bottom: 25px;
+}
+
+.roadmap-section .roadmap-card h4 {
+  font-size: var(--fs-28);
+  color: var(--clr-FFFFFF);
+  margin-bottom: 20px;
+}
+
+.roadmap-section .roadmap-card p {
+  margin-top: auto;
+}
+
+.roadmap-section .roadmap-card:hover {
+  transform: translateY(-5px);
+}
+
+/* roadmap-section end */
+
+/* humai-ecosystem start */
+
+.humai-ecosystem h2 {
+  margin: 0 50px 10px 0;
+}
+
+.humai-ecosystem .ecosystem-header{
+margin-top: 60px;
+}
+
+.humai-ecosystem .ecosystem-row {
+  margin-top: 50px;
+  display: flex;
+}
+@media (min-width: 992px) {
+.humai-ecosystem .ecosystem-row .col-lg-5-custom {
+    width: 20%;
+    flex: 0 0 20%;
+  }
+  }
+
+.humai-ecosystem .eco-item span {
+  width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: var(--clr-FFFFFF);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+.humai-ecosystem .eco-item span::before{
+  content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(90deg, rgba(10, 125, 204, 0) -12.45%, #0a7dcc 51.16%, rgba(10, 125, 204, 0) 116%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+    animation: rotateGradient 3s infinite linear;
+}
+
+.humai-ecosystem .eco-item h5 {
+ margin-bottom: 20px;
+    font-size: var(--fs-30);
+    color: var(--clr-FFFFFF);
+}
+
+.humai-ecosystem .eco-item p {
+ font-size: var(--fs-20);
+    color: var(--clr-FFFFFF);
+}
+
+/* humai-ecosystem end */
+
+
+/* humai-cta start */
+
+.humai-cta{
+  background-color: var(--clr-0F1016);
+  padding:40px 0 80px;
+}
+
+.humai-cta h2{
+  font-size: var(--fs-48);
+    color: var(--clr-FFFFFF);
+}
+.humai-cta p{
+  max-width: 600px;
+  margin: 20px auto 50px;
+}
+/* humai-cta end */
+
+@media (max-width:1200px){
+  .roadmap-wrapper  .row > div:nth-child(1){
+    order: 1;
+  }
+  .roadmap-wrapper  .row > div:nth-child(2){
+    order: 2;
+  }
+  .roadmap-wrapper  .row > div:nth-child(3){
+    order: 3;
+  }
+  .roadmap-wrapper  .row > div:nth-child(4){
+    order: 4;
+  }
+  .roadmap-wrapper  .row > div:nth-child(7){
+    order: 5;
+  }
+  .roadmap-wrapper  .row > div:nth-child(6){
+    order: 6;
+  }
+  .roadmap-wrapper  .row > div:nth-child(5){
+    order: 7;
+  }
+}
+/******************** Landing page end ***********************/
+
+
+
 /* ================= RESPONSIVE ================= */
 @media (min-width:1200px){
   .main-header nav.menu,.main-header .right{
