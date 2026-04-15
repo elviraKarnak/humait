@@ -1,87 +1,75 @@
 <?php
-  
+
+$lplwhTitle = get_field('title_lwh');
+$lplwhDescription = get_field('description_lwh');
+$lplwhListTitle = get_field('list_title_lwh');
+$lplwhListDescription = get_field('list_description_lwh');
+$lplwhListItems = get_field('list_items_lwh');
+
+$lpsecImg = get_field('section_image_lwh');
+$lpBannerCoverImg = get_field('section_cover_image_lwh');
+
+$lpBannerCoverImgUrl = !empty($lpBannerCoverImg['url']) ? $lpBannerCoverImg['url'] : get_stylesheet_directory_uri() . 'assets/images/humai-section-bg.webp'; 
   
   ?>
-  <section class="journey-section roadmap-section" style="
-        background: url('assets/images/roadmap-section-bg.webp')
+
+  <?php if (!empty($lplwhTitle) || !empty($lplwhDescription) || !empty($lplwhListTitle) || !empty($lplwhListDescription) || !empty($lplwhListItems) || !empty($lpsecImg) || !empty($lpBannerCoverImgUrl)): ?>
+  <section class="truth-section humai-section" style="
+        background: url('<?php echo $lpBannerCoverImgUrl; ?>')
           no-repeat center/cover;
       ">
     <div class="container">
 
-      <!-- Heading -->
+    <?php if (!empty($lplwhTitle) || !empty($lplwhDescription)): ?>
+      <!-- Top Heading -->
       <div class="row text-center">
         <div class="col-lg-10 mx-auto">
-          <h2>The HumAITT Roadmap - Step by Step Future System</h2>
-          <p>
-            This roadmap outlines the structured development of a next-generation human and AI-powered global system.
-          </p>
+          <div class="top-bar">
+            <?php if (!empty($lplwhTitle)): ?>
+              <h2><?php echo esc_html($lplwhTitle); ?></h2> 
+            <?php endif; ?>
+            <?php if (!empty($lplwhDescription)): ?>
+              <p><?php echo esc_html($lplwhDescription); ?></p> 
+            <?php endif; ?>
+          </div>
         </div>
       </div>
+        <?php endif; ?>
 
-      <!-- Timeline -->
-      <div class="roadmap-wrapper ">
+      <!-- Content Row -->
+      <div class="row align-items-center justify-content-between mt-5">
 
-        <!-- Row 1 -->
-        <div class="row g-5 justify-content-center roadmap-row">
-
-          <div class="col-xl-3 col-md-6">
-            <div class="roadmap-card">
-              <span>Step 1</span>
-              <h4>Build Awareness</h4>
-              <p>Educate people about the need for a new human-AI system and the limitations of current global
-                structures.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6">
-            <div class="roadmap-card">
-              <span>Step 2</span>
-              <h4>Grow the HumAIT Movement</h4>
-              <p>Create a global community aligned around transparency, truth, and collaborative progress.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6">
-            <div class="roadmap-card">
-              <span>Step 3</span>
-              <h4>Build TTUN (The People’s Platform)</h4>
-              <p>Develop a decentralized platform where individuals can participate, contribute, and collaborate.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6">
-            <div class="roadmap-card">
-              <span>Step 4</span>
-              <h4>Build GUUN (Governance Blueprint)</h4>
-              <p>Design a transparent governance system powered by both human input and AI optimization.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6">
-            <div class="roadmap-card">
-              <span>Step 7</span>
-              <h4>Expand Globally</h4>
-              <p>Scale the system across nations to move toward a unified global civilization.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6">
-            <div class="roadmap-card">
-              <span>Step 6</span>
-              <h4>Pilot the System</h4>
-              <p>Test the ecosystem in controlled environments to refine systems and ensure scalability.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6">
-            <div class="roadmap-card">
-              <span>Step 5</span>
-              <h4>Introduce UrCoin (Value System)</h4>
-              <p>Launch a contribution-based digital economy that rewards meaningful participation.</p>
-            </div>
+      <?php if (!empty($lpsecImg)): ?>
+        <!-- Image -->
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="humai-img">
+            <img src="<?php echo esc_url($lpsecImg['url']); ?>" alt="<?php echo esc_attr($lpsecImg['alt']); ?>" height="<?php echo esc_attr($lpsecImg['height']); ?>" width="<?php echo esc_attr($lpsecImg['width']); ?>">
           </div>
         </div>
+        <?php endif; ?>
+
+        <!-- Text Content -->
+        <div class="col-lg-6">
+          <div class="humai-content">
+            <?php if (!empty($lplwhListTitle)): ?>
+              <h3><?php echo esc_html($lplwhListTitle); ?></h3>
+            <?php endif; ?>
+            <?php if (!empty($lplwhListDescription)): ?>
+              <p><?php echo esc_html($lplwhListDescription); ?></p>
+                
+            <?php endif; ?>
+   
+   
+                <?php if (!empty($lplwhListItems)): ?>
+                             <div class="list">
+                                <?php echo $lplwhListItems; ?>
+         
+            </div>
+            <?php endif; ?>
+          </div>
+        </div>
+
       </div>
     </div>
-
   </section>
+<?php endif; ?>
