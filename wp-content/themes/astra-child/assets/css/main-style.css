@@ -291,6 +291,33 @@ background-image: url('../images/button-arrow.svg');
   margin-left: 12px;
 }
 
+.list ul{
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 510px;
+  margin: 30px auto;
+}
+
+ .list ul li {
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 15px;
+  font-size: var(--fs-24);
+  font-weight: 400;
+}
+
+ .list ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 44px;
+  height: 44px;
+
+  background: url("../images/check-mark.svg") no-repeat center;
+  background-size: contain;
+}
 /* header start */
 
 .main-header {
