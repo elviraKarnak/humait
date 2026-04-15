@@ -32,11 +32,11 @@ get_header(); ?>
           <div class="btns d-flex align-items-center flex-column flex-md-row gap-3">
             <div class="btn_wrapper">
               <a href="#" class="btn">Explore the Roadmap
-                <img src="./<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
             </div>
             <div class="btn_wrapper">
               <a href="#" class="btn">Join the Movement
-                <img src="./<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
             </div>
           </div>
         </div>
@@ -302,15 +302,15 @@ get_header(); ?>
       <div class="btns d-flex justify-content-center align-items-center flex-column flex-lg-row gap-3">
         <div class="btn_wrapper ">
           <a href="#" class="btn">Join the Movement
-            <img src="./<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
         </div>
         <div class="btn_wrapper">
           <a href="#" class="btn">Explore the System
-            <img src="./<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
         </div>
         <div class="btn_wrapper">
           <a href="#" class="btn">Be Part of the Future
-            <img src="./<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow" /></a>
         </div>
       </div>
     </div>
