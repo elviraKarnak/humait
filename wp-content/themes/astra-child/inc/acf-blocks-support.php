@@ -36,7 +36,7 @@ add_action('acf/init', function () {
     ];
 
      $LPBlocks = [
-        'banner'       => 'Landing Banner',
+        'landing-banner'       => 'Landing Banner',
         
     ];
 
