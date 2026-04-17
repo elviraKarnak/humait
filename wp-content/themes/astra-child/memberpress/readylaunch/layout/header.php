@@ -1,78 +1,144 @@
 <?php
-defined('ABSPATH') || exit;
-
 /**
- * The layout for authenticated or guest pages
+ * The header for Astra Theme.
  *
- * @package memberpress-pro-template
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Astra
+ * @since 1.0.0
  */
 
-?>
-<!doctype html>
+if (!defined('ABSPATH')) {
+	exit; // Exit if accessed directly.
+}
+
+?><!DOCTYPE html>
+<?php astra_html_before(); ?>
 <html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="<?php bloginfo('charset'); ?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="profile" href="https://gmpg.org/xfn/11">
-
-  <?php
-    MeprHooks::do_action('mepr_rl_enqueue_scripts');
-    wp_head(); 
-    astra_head_bottom();
-    ?>
+	<?php astra_head_top(); ?>
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php
+	if (apply_filters('astra_header_profile_gmpg_link', true)) {
+		?>
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<?php
+	}
+	?>
+	<?php wp_head(); ?>
+	<?php astra_head_bottom(); ?>
 </head>
 
-<body <?php body_class(isset($body_classes) ? $body_classes : 'mepr-pro-template mepr-app-layout'); ?>>
-  <?php wp_body_open(); ?>
-  <div id="page" class="site app-layout">
-    <header id="masthead" class="site-header <?php echo isset($is_account_page) ? 'account-header' : '' ?>">
-      <div class="site-branding">
-        <a href="<?php echo esc_url(home_url()); ?>"><img class="site-branding__logo"
-            src="<?php echo esc_url_raw($logo); ?>" /></a>
-      </div><!-- .site-branding -->
+<body <?php astra_schema_body(); ?> <?php body_class(); ?>>
+	<?php astra_body_top(); ?>
+	<?php wp_body_open(); ?>
 
-      <?php if ($user) : ?>
-        <div class="ml-3 profile-menu">
-          <div class="profile-menu__button-group">
-            <button type="button" class="profile-menu__button --is-tablet" id="user-menu-button"
-              aria-expanded="false" aria-haspopup="true">
-              <img class="profile-menu__avatar h-8 w-8 rounded-full"
-                src="<?php echo esc_url_raw(get_avatar_url($user->ID, ['size' => '51'])) ?>"
-                alt="">
+	<a class="skip-link screen-reader-text" href="#content">
+		<?php echo esc_html(astra_default_strings('string-header-skip-link', false)); ?>
+	</a>
 
-              <div class="profile-menu__text">
-                <span>
-                  <?php echo esc_html($user->full_name()); ?>
-                </span>
-                <span class="profile-menu__text--small"><?php echo esc_html($user->user_email); ?></span>
-              </div>
+	<div <?php
+	echo wp_kses_post(
+		astra_attr(
+			'site',
+			array(
+				'id' => 'page',
+				'class' => 'hfeed site',
+			)
+		)
+	);
+	?>>
+		<?php
+		// astra_header_before();
 
-              <svg class="profile-menu__arrow_down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
+		// astra_header();
 
-            <button class="profile-menu__button --is-mobile">
-              <svg xmlns="http://www.w3.org/2000/svg" class="profile-menu__hamburger" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+		// astra_header_after();
 
-            <div class="profile-menu__dropdown dropdown">
-              <a class="profile-menu__dropdown-item dropdown__item"
-                href="<?php echo esc_url($account_url); ?>"><?php echo esc_html_x('Account', 'ui', 'memberpress'); ?></a>
-              <a class="profile-menu__dropdown-item dropdown__item"
-                href="<?php echo esc_url($change_password_url); ?>"><?php echo esc_html_x('Change Password', 'ui', 'memberpress'); ?></a>
-              <a class="profile-menu__dropdown-item dropdown__item"
-                href="<?php echo esc_url($logout_url); ?>"><?php echo esc_html_x('Logout', 'ui', 'memberpress'); ?></a>
-            </div>
+		// astra_content_before();
+		?>
 
-          </div>
-        </div>
-      <?php endif; ?>
-    </header><!-- #masthead -->
+	<div id="content" class="site-content">
+		<div class="ast-container-main">
+			<?php astra_content_top(); ?>
+
+			<header class="main-header">
+				<div class="container">
+
+					<!-- LEFT MENU -->
+					<nav class="menu">
+						<div class="menu-close">✕</div>
+						<?php
+							wp_nav_menu(
+							array(
+								'container' => '',
+								'container_class' => '',
+								'container_id' => '',
+								'items_wrap' => '<ul id="%1$s menu" class="%2$s primary_menu ">%3$s</ul>',
+								'theme_location' => 'menu-1',
+							)
+							);
+						?>
+					</nav>
+
+					 <?php if(has_custom_logo()){
+                        echo "<div class='logo'>";
+                		the_custom_logo(); 
+						echo "</div>";
+              		}
+
+              			?>
+					<!-- LOGO -->
+			
+					<!-- RIGHT SIDE -->
+					<div class="right">
+
+					<!-- LANGUAGE DROPDOWN -->
+					<div class="lang-dropdown">
+						<div class="selected">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/usa-flag.svg" alt="usa flag">
+							<span>English</span>
+						</div>
+
+						<ul>
+							<li>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/usa-flag.svg" alt="usa flag"> English
+							</li>
+							<!-- <li>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/france.webp" alt="france"> French
+							</li>
+							<li>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/spain.webp" alt="spain"> Spanish
+							</li> -->
+						</ul>
+					</div>
+
+					<!-- BUTTON -->
+					<div class="btn_wrapper">
+						<?php
+							wp_nav_menu(
+							array(
+								'container' => '',
+								'container_class' => '',
+								'container_id' => '',
+								'items_wrap' => '<ul id="%1$s menu" class="%2$s primary_menu ">%3$s</ul>',
+								'theme_location' => 'primary',
+							)
+							);
+						?>
+						<!-- <a href="#" class="btn">Get the Book <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/button-arrow.svg" alt="button arrow"></a> -->
+					</div>
+					<!-- TOGGLE BUTTON -->
+					<div class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					</div>
+				</div>
+			</div>
+		</header>
