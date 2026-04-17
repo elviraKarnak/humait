@@ -76,7 +76,7 @@ $topDescription = get_field('top_description_hb_bl');
                 </div>
                 <!-- RIGHT -->
                 <?php if (!empty($homeBannerBookImg)): ?>
-                    <div class="col-lg-5 text-lg-end books">
+                    <div class="col-lg-5 text-lg-end text-center books">
                         <img src="<?php echo $homeBannerBookImg['url']; ?>" alt="<?php echo $homeBannerBookImg['alt']; ?>"
                             height="<?php echo $homeBannerBookImg['height']; ?>"
                             width="<?php echo $homeBannerBookImg['width']; ?>">
