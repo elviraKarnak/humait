@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: landing Page Html
+ * Template Name: PAGE: Inner Page
  */
 
 
