@@ -5,18 +5,23 @@
  */
 
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+if (!defined('ABSPATH')) {
+  exit; // Exit if accessed directly.
 }
 
 get_header('inner');
-    if(have_posts()) :
-        while (have_posts() ) : the_post(); ?>
+if (have_posts()):
+  while (have_posts()):
+    the_post(); ?>
 
-      <main>
-        <?php the_content(); ?>
-      </main>
+    <main>
+      <div class="inner-container-wp">
+        <div class="container">
+          <?php the_content(); ?>
+        </div>
+      </div>
+    </main>
 
-      <?php endwhile; 
-    endif; 
+  <?php endwhile;
+endif;
 get_footer(); ?>

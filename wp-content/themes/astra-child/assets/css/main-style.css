@@ -1566,7 +1566,12 @@ margin-top: 60px;
   margin: 20px auto 50px;
 }
 /* humai-cta end */
-
+.inner-container-wp{
+  margin: 240px 0px 10px 0px;
+}
+.main-header.inner-header{
+background-color: var(--clr-0F1016);
+}
 @media (max-width:1200px){
   .roadmap-wrapper  .row > div:nth-child(1){
     order: 1;
