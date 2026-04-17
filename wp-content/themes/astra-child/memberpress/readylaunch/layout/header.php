@@ -74,4 +74,5 @@ defined('ABSPATH') || exit;
         </div>
       <?php endif; ?>
 
+      <p>new content</p>
     </header><!-- #masthead -->
