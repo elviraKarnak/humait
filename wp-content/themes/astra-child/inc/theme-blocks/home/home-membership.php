@@ -71,7 +71,7 @@ if (have_rows('list_items_hm')) {
           </div>
         </div>
       <?php endif; ?>
-
+      
       <?php if (!empty($listItems)) : ?>
         <ul class="list">
           <?php foreach ($listItems as $listItem) : ?>
