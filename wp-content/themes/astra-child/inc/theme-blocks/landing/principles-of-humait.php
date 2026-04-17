@@ -29,31 +29,26 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
 
         <?php if (!empty($leftList) || !empty($rightList)): ?>
 
-        <div class="row justify-content-center mt-4">
+            <div class="row justify-content-center mt-4">
 
-
-
-            <?php if (!empty($leftList)): ?>
-            <div class="col-lg-4 col-md-6">
-                <div class="list">
-                  <?php echo $leftList; ?>
+                <?php if (!empty($leftList)): ?>
+                <div class="col-lg-2 col-md-4">
+                    <div class="list">
+                    <?php echo $leftList; ?>
+                    </div>
                 </div>
-            </div>
-            <?php endif; ?>
+                <?php endif; ?>
 
 
 
-          <?php if (!empty($rightList)): ?>
-            <div class="col-lg-4 col-md-6">
-                <div class="list">
-                    <?php echo $rightList; ?>
+            <?php if (!empty($rightList)): ?>
+                <div class="col-lg-4 col-md-6">
+                    <div class="list">
+                        <?php echo $rightList; ?>
+                    </div>
                 </div>
+                <?php endif; ?>
             </div>
-            <?php endif; ?>
-
-
-         
-        </div>
         <?php endif; ?>
 
 
