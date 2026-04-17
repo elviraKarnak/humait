@@ -553,7 +553,7 @@ background-image: url('../images/button-arrow.svg');
   width: 50%;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -80px;
 }
 
 /* hero-section end */
