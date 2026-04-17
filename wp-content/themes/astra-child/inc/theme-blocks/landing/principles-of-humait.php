@@ -44,7 +44,7 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
 
 
           <?php if (!empty($rightList)): ?>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-4 col-md-6">
                 <div class="list">
                     <?php echo $rightList; ?>
                 </div>
