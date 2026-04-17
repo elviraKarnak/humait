@@ -16,18 +16,20 @@ $buttonArrowUrl = $buttonArrow ? $buttonArrow['url'] : get_stylesheet_directory_
 $buttonArrowHeight = $buttonArrow ? $buttonArrow['height'] : '11';
 $buttonArrowWidth = $buttonArrow ? $buttonArrow['width'] : '11';
 
+$topDescription = get_field('top_description_hb_bl');
+
+
 ?>
 
 <?php if (!empty($homeBannerTitle) || !empty($homeBannerDescription) || !empty($homeBannerDescription_2) || !empty($homeBannerRightBtn) || !empty($homeBannerLeftBtn) || !empty($homeBannerBookImg) || !empty($homeBannerCoverImgUrl)): ?>
     <section class="hero-section" style='background: url("<?php echo $homeBannerCoverImgUrl; ?>") no-repeat center/cover;'>
         <div class="container">
-            <div class="top-sc">
-               <p> Another war.</p>
-               <p> Another market crash.</p>
-               <p> Another crisis.</p>
-               <p> Another wave of inflation.</p>
-
-            </div>
+            <?php if (!empty($topDescription)): ?>
+                <div class="top-sc">
+                    <?php echo $topDescription; ?>
+                </div>
+            <?php endif; ?>
+            
             <div class="row align-items-center hero-content">
 
                 <!-- LEFT -->
