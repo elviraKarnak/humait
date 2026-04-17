@@ -36,9 +36,10 @@ add_action('acf/init', function () {
     ];
 
      $LPBlocks = [
-        'landing-banner'       => 'Landing Banner',
-        'why-hummit'          => 'Why HumAIT?',
-        'humait-journey'      => 'HumAIT Journey',
+        'landing-banner'          => 'Landing Banner',
+        'why-hummit'              => 'Why HumAIT?',
+        'humait-journey'          => 'HumAIT Journey',
+        'principles-of-humait'    => 'Principles of HumAIT',
         
     ];
 

@@ -13,7 +13,7 @@ $lpBannerCoverImgUrl = !empty($lpBannerCoverImg['url']) ? $lpBannerCoverImg['url
   
   ?>
 
-  <?php if (!empty($lplwhTitle) || !empty($lplwhDescription) || !empty($lplwhListTitle) || !empty($lplwhListDescription) || !empty($lplwhListItems) || !empty($lpsecImg) || !empty($lpBannerCoverImgUrl)): ?>
+<?php if (!empty($lplwhTitle) || !empty($lplwhDescription) || !empty($lplwhListTitle) || !empty($lplwhListDescription) || !empty($lplwhListItems) || !empty($lpsecImg) || !empty($lpBannerCoverImgUrl)): ?>
   <section class="truth-section humai-section" style="
         background: url('<?php echo $lpBannerCoverImgUrl; ?>')
           no-repeat center/cover;
@@ -72,4 +72,4 @@ $lpBannerCoverImgUrl = !empty($lpBannerCoverImg['url']) ? $lpBannerCoverImg['url
       </div>
     </div>
   </section>
-    <?php endif; ?>
+<?php endif; ?>
