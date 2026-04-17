@@ -1,8 +1,6 @@
 <?php
 defined('ABSPATH') || exit;
 
-get_header('inner');
-
 
 $address_values     = isset($address_values) ? $address_values : [];
 $show_welcome_image = isset($atts['show_welcome_image']) ? $atts['show_welcome_image'] : $mepr_options->design_show_account_welcome_image;
@@ -190,5 +188,3 @@ $user_message       = MeprHooks::apply_filters('mepr_user_message', wpautop(do_s
   </div>
   </div>
 </div>
-
-<?php get_footer(); ?>
