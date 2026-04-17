@@ -550,7 +550,7 @@ background-image: url('../images/button-arrow.svg');
 }
 
 .hero-section .books img {
-  width: 50%;
+  width: 40%;
   position: absolute;
   right: 0;
   bottom: -80px;
@@ -1679,7 +1679,7 @@ margin-top: 60px;
   .hero-section .books img {
     position: static;
     width: 70%;
-    margin-left: -115px;
+   
   }
 
   /* hero-section end */
@@ -1832,7 +1832,7 @@ margin-top: 60px;
   }
   .hero-section .books img {
     width: 90%;
-    margin-left: -50px;
+  
   }
   
   .hero-section .hero-content {
