@@ -17,7 +17,7 @@ defined('ABSPATH') || exit;
   <link rel="profile" href="https://gmpg.org/xfn/11">
 
   <?php
-    MeprHooks::do_action('mepr_rl_enqueue_scripts');
+   // MeprHooks::do_action('mepr_rl_enqueue_scripts');
     wp_head(); ?>
 </head>
 
