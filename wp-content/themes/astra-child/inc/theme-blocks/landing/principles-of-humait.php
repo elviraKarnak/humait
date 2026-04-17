@@ -32,14 +32,6 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
         <div class="row justify-content-center mt-4">
 
 
-          <?php if (!empty($rightList)): ?>
-            <div class="col-lg-2 col-md-4">
-                <div class="list">
-                    <?php echo $rightList; ?>
-                </div>
-            </div>
-            <?php endif; ?>
-
 
             <?php if (!empty($leftList)): ?>
             <div class="col-lg-4 col-md-6">
@@ -49,6 +41,18 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
             </div>
             <?php endif; ?>
 
+
+
+          <?php if (!empty($rightList)): ?>
+            <div class="col-lg-2 col-md-4">
+                <div class="list">
+                    <?php echo $rightList; ?>
+                </div>
+            </div>
+            <?php endif; ?>
+
+
+         
         </div>
         <?php endif; ?>
 
