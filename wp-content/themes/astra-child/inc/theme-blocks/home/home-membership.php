@@ -66,7 +66,9 @@ if (have_rows('list_items_hm')) {
       <?php if (!empty($secDescription)) : ?>
         <div class="top-content">
           <?php echo wp_kses_post($secDescription); ?>
-          <?php echo wp_kses_post($secDescription_2); ?>
+          <div class="btm-sc">
+            <?php echo wp_kses_post($secDescription_2); ?>
+          </div>
         </div>
       <?php endif; ?>
 
