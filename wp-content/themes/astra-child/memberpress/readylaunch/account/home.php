@@ -1,10 +1,16 @@
 <?php
 defined('ABSPATH') || exit;
 
+get_header('inner');
+
+
 $address_values     = isset($address_values) ? $address_values : [];
 $show_welcome_image = isset($atts['show_welcome_image']) ? $atts['show_welcome_image'] : $mepr_options->design_show_account_welcome_image;
 $welcome_image      = isset($atts['welcome_image']) ? $atts['welcome_image'] : wp_get_attachment_url($mepr_options->design_account_welcome_img);
 $user_message       = MeprHooks::apply_filters('mepr_user_message', wpautop(do_shortcode(trim($mepr_current_user->user_message))), $mepr_current_user);
+
+
+
 ?>
 
 <h1 class="mepr_page_header"><?php echo esc_html_x('Profile', 'ui', 'memberpress'); ?></h1>
@@ -184,3 +190,5 @@ $user_message       = MeprHooks::apply_filters('mepr_user_message', wpautop(do_s
   </div>
   </div>
 </div>
+
+<?php get_footer(); ?>
