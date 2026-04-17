@@ -1567,7 +1567,8 @@ margin-top: 60px;
 }
 /* humai-cta end */
 .inner-container-wp{
-  margin: 240px 0px 100px 0px;
+  padding: 240px 0px 100px 0px;
+  background-color: var(--clr-0F1016);
 }
 .main-header.inner-header{
 background-color: var(--clr-0F1016);
