@@ -3,9 +3,12 @@ $secInfoTitle = get_field('info_title_hm');
 $secInfoImg = get_field('info_global_icon', 'option');
 $secTitle = get_field('title_hm');
 $secDescription = get_field('description_hm');
+$secDescription_2 = get_field('description_hm_2');
+
 $secBottomLine = get_field('bottom_line_hm');
 $secBtn = get_field('section_button_btn_hm');
 $secBgImg = get_field('section_image_hm');
+
 
 $secBgImgUrl = !empty($secBgImg['url']) ? $secBgImg['url'] : get_stylesheet_directory_uri() . '/assets/images/membership-section-bg.webp';
 
@@ -63,6 +66,7 @@ if (have_rows('list_items_hm')) {
       <?php if (!empty($secDescription)) : ?>
         <div class="top-content">
           <?php echo wp_kses_post($secDescription); ?>
+          <?php echo wp_kses_post($secDescription_2); ?>
         </div>
       <?php endif; ?>
 
