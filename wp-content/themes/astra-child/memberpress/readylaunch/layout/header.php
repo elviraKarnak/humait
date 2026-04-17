@@ -17,8 +17,10 @@ defined('ABSPATH') || exit;
   <link rel="profile" href="https://gmpg.org/xfn/11">
 
   <?php
-   // MeprHooks::do_action('mepr_rl_enqueue_scripts');
-    wp_head(); ?>
+    MeprHooks::do_action('mepr_rl_enqueue_scripts');
+    wp_head(); 
+    astra_head_bottom();
+    ?>
 </head>
 
 <body <?php body_class(isset($body_classes) ? $body_classes : 'mepr-pro-template mepr-app-layout'); ?>>
@@ -73,6 +75,4 @@ defined('ABSPATH') || exit;
           </div>
         </div>
       <?php endif; ?>
-
-      <p>new content</p>
     </header><!-- #masthead -->
