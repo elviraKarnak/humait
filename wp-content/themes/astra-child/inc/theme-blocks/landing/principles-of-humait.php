@@ -69,12 +69,10 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
 
             <div class="row ecosystem-row ">
 
-                <?php 
-                
-                 $i= 1;
-                while(have_rows('ecosystem_phbl')): the_row(); 
+                <?php $i= 1;
 
-                       
+                    while(have_rows('ecosystem_phbl')): the_row(); 
+
                         $ecoTitle = get_sub_field('title_eco_sin');
                         $ecoDescription = get_sub_field('description_eco_sin');
                     ?>
