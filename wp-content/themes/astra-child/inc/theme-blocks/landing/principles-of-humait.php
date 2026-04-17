@@ -72,8 +72,8 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
                 <?php while(have_rows('ecosystem_phbl')): the_row(); 
 
                         $i= 1;
-                        $ecoTitle = get_sub_field('title_ecosystem_phbl');
-                        $ecoDescription = get_sub_field('description_ecosystem_phbl');
+                        $ecoTitle = get_sub_field('title_eco_sin');
+                        $ecoDescription = get_sub_field('description_eco_sin');
                     ?>
 
                         <div class="col-lg-5-custom col-md-6 col-12">
