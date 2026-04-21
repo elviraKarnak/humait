@@ -1611,6 +1611,9 @@ background-color: var(--clr-0F1016);
   .main-header .logo{
     width: 20%;text-align: center;
   }
+  .landing-hero-section .books img{
+    margin-bottom: -50px;
+  }
 }
 @media (min-width:768px){
   .architecture-section .rgt-sc{padding-bottom: 140px;}
