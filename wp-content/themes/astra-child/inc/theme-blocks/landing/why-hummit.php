@@ -37,11 +37,11 @@ $lpBannerCoverImgUrl = !empty($lpBannerCoverImg['url']) ? $lpBannerCoverImg['url
         <?php endif; ?>
 
       <!-- Content Row -->
-      <div class="row align-items-center justify-content-between mt-5">
+      <div class="row align-items-center justify-content-between mt-5 gx-xl-5">
 
       <?php if (!empty($lpsecImg)): ?>
         <!-- Image -->
-        <div class="col-lg-5 mb-4 mb-lg-0">
+        <div class="col-lg-6 mb-4 mb-lg-0">
           <div class="humai-img">
             <img src="<?php echo esc_url($lpsecImg['url']); ?>" alt="<?php echo esc_attr($lpsecImg['alt']); ?>" height="<?php echo esc_attr($lpsecImg['height']); ?>" width="<?php echo esc_attr($lpsecImg['width']); ?>">
           </div>
