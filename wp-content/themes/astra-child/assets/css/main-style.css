@@ -1602,6 +1602,9 @@ background-color: var(--clr-0F1016);
   .roadmap-wrapper  .row > div:nth-child(5){
     order: 7;
   }
+  .humai-ecosystem .ecosystem-row{
+    gap:40px 0px;
+  }
 }
 /******************** Landing page end ***********************/
 
