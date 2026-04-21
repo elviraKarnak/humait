@@ -4,6 +4,10 @@ $secTitle = get_field('section_title_phbl');
 $leftList = get_field('left_list_phbl');
 $rightList = get_field('right_list_phbl');
 
+$secNewDescription = get_field('section_decription_phbl');
+
+
+
 $secEcosystem = get_field('title_ecosystem_phbl');
 
 $secDescription = get_field('description_phbl');
@@ -15,7 +19,7 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
 ?>
 
 
-<?php if (!empty($secTitle) || !empty($secDescription) || !empty($leftList) || !empty($rightList) || !empty($secEcosystem) || !empty($secImgCoverImgUrl)): ?>
+<?php if (!empty($secTitle) || !empty($secNewDescription) || !empty($secDescription) || !empty($leftList) || !empty($rightList) || !empty($secEcosystem) || !empty($secImgCoverImgUrl)): ?>
 
     <section class="journey-section humai-ecosystem" style="background: url('<?php echo $secImgCoverImgUrl; ?>') no-repeat center/cover;">
 
@@ -24,8 +28,13 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
          <?php if (!empty($secTitle)): ?>
             <div class="text-center">
                 <h2><?php echo $secTitle; ?></h2>
+                <?php if (!empty($secNewDescription)): ?>
+                    <p><?php echo $secNewDescription; ?></p>
+                <?php endif; ?>
             </div>
         <?php endif; ?>
+
+
 
         <?php if (!empty($leftList) || !empty($rightList)): ?>
 
