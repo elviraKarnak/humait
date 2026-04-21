@@ -1149,9 +1149,9 @@ background-image: url('../images/button-arrow.svg');
   width: 305px;
 }
 
-.main-footer .contact ul li:nth-child(3) .btn_wrapper {
+/* .main-footer .contact ul li:nth-child(3) .btn_wrapper {
   width: 255px;
-}
+} */
 .main-footer .contact .btn {
   display: flex;
   justify-content: center;
@@ -1540,6 +1540,13 @@ margin-top: 60px;
  margin-bottom: 20px;
     font-size: var(--fs-30);
     color: var(--clr-FFFFFF);
+}
+.humai-ecosystem .eco-item h5 a{
+  font-size: var(--fs-30);
+    color: var(--clr-FFFFFF);
+}
+.humai-ecosystem .eco-item h5 a:hover{
+  color: var(--clr-048AE5);
 }
 
 .humai-ecosystem .eco-item p {
