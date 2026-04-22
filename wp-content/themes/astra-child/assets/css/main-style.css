@@ -1803,6 +1803,16 @@ background-color: var(--clr-0F1016);
 }
 
 @media (max-width: 767px) {
+  .journey-section.roadmap-section{
+overflow-x: hidden;
+  }
+  .journey-section.humai-ecosystem ul li{
+    font-size: 16px;padding-left: 40px;
+  }
+  .journey-section.humai-ecosystem ul li:before{
+    width: 32px;
+    height:47px;
+  }
   .hero-section.landing-hero-section .books{
     margin-top:50px
   }
