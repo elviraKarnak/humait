@@ -1803,6 +1803,9 @@ background-color: var(--clr-0F1016);
 }
 
 @media (max-width: 767px) {
+  .hero-section.landing-hero-section .books{
+    margin-top:50px
+  }
   .main-header .btn_wrapper li::after {
    
     width: 7px;
