@@ -1654,7 +1654,9 @@ background-color: var(--clr-0F1016);
 }
 @media (max-width: 991px) {
   /* header start */
-
+.landing-hero-section .books{
+  margin-bottom: 30px;
+}
   .main-header nav {
     gap: 15px;
   }
