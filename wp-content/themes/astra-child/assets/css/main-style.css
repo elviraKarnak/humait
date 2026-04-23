@@ -1628,6 +1628,7 @@ background-color: var(--clr-0F1016);
 
 /* ================= RESPONSIVE ================= */
 @media (min-width:1200px){
+ 
   .main-header nav.menu,.main-header .right{
     width: 40%;
   }
@@ -1639,6 +1640,8 @@ background-color: var(--clr-0F1016);
   }
   .landing-hero-section .books img{
     margin-bottom: 0px;
+     margin-bottom: -43px;
+    max-width: 92%;
   }
 }
 @media (min-width:768px){
