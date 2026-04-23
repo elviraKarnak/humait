@@ -42,7 +42,7 @@
     --fs-48: 42px;
     --fs-40: 36px;
     --fs-35: 32px;
-
+ --fs-66: 55px;
     --spc-100: 80px;
     --spc-50: 40px;
   }
@@ -59,6 +59,7 @@
 
     --spc-100: 70px;
     --spc-50: 35px;
+     --fs-66: 50px;
   }
   .container {
     padding: 0 30px !important;
@@ -66,6 +67,7 @@
 }
 @media (max-width: 991.98px) {
   :root {
+     --fs-66: 45px;
     --fs-80: 50px;
     --fs-52: 36px;
     --fs-48: 32px;
@@ -86,6 +88,7 @@
 
 @media (max-width: 767.98px) {
   :root {
+     --fs-66: 35px;
     --fs-80: 30px;
     --fs-52: 28px;
     --fs-48: 27px;
