@@ -228,13 +228,13 @@ background-image: url('../images/button-arrow.svg');
 .btn:hover {
   color: var(--clr-FFFFFF);
 }
-.btn_wrapper.btn_wrapper2 , .main-footer  .contact li .btn_wrapper{
+.btn_wrapper.btn_wrapper2 , .main-footer  .contact li:last-child .btn_wrapper{
   background: rgba(201, 107, 0, 0.08);
 }
-.btn_wrapper.btn_wrapper2::after , .main-footer  .contact li .btn_wrapper:after{
+.btn_wrapper.btn_wrapper2::after , .main-footer  .contact li:last-child .btn_wrapper:after{
   box-shadow: 0 8px 30px #a85f00;
 }
-.btn_wrapper.btn_wrapper2::before , .main-footer  .contact li .btn_wrapper:before{
+.btn_wrapper.btn_wrapper2::before , .main-footer  .contact li:last-child .btn_wrapper:before{
   box-shadow: 0 -8px 20px #a85f00;
 }
 .btn.btn2::before , .main-footer  .contact li:last-child a:before{
@@ -247,7 +247,7 @@ background-image: url('../images/button-arrow.svg');
     #d49a4f 98.05%
   );
 }
-.btn.btn2::after {
+.btn.btn2::after , .main-footer  .contact li:last-child a:after{
   background: linear-gradient(180deg, #f5bd74 29.47%, #915617 65.84%);
 }
 
