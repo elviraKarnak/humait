@@ -1657,6 +1657,7 @@ background-color: var(--clr-0F1016);
   .hero-section.landing-hero-section:before{
 content:none
   }
+  .hero-section.landing-hero-section h1{margin-bottom: 15px;}
 .landing-hero-section .books{
   margin-top: 30px;
 }
