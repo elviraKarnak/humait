@@ -34,60 +34,61 @@ $buttonArrowWidth = $buttonArrow ? $buttonArrow['width'] : '11';
           <?php if (!empty($lpBannerDescription)): ?>
             <p>
               <?php echo esc_html($lpBannerDescription); ?>
-            </p>    
+            </p>
           <?php endif; ?>
-          
+
           <?php if (!empty($lpBannerDescription_2)): ?>
-      
-          <div class="grad-border2">
-            <p> <?php echo esc_html($lpBannerDescription_2); ?></p>
-          </div>
+
+            <div class="grad-border2">
+              <p> <?php echo esc_html($lpBannerDescription_2); ?></p>
+            </div>
           <?php endif; ?>
           <?php if (!empty($lpBannerDescription_3)): ?>
-          <div class="text">
-            <p>
-              <?php echo esc_html($lpBannerDescription_3); ?>
-            </p>
-          </div>
+            <div class="text">
+              <p>
+                <?php echo esc_html($lpBannerDescription_3); ?>
+              </p>
+            </div>
           <?php endif; ?>
           <?php if (!empty($lpBannerRightBtn) || !empty($lpBannerLeftBtn)): ?>
-          <div class="btns d-flex align-items-center flex-column flex-md-row gap-3">
-            <?php if (!empty($lpBannerLeftBtn)): ?>
-              <div class="btn_wrapper">
-                <a href="<?php echo esc_url($lpBannerLeftBtn['url']); ?>"
-                  target='<?php echo esc_attr($lpBannerLeftBtn['target'] ? $lpBannerLeftBtn['target'] : '_self'); ?>'
-                  class="btn">
-                  <?php echo esc_html($lpBannerLeftBtn['title']); ?>
-                  <img src="<?php echo esc_url($buttonArrowUrl); ?>" height="<?php echo esc_attr($buttonArrowHeight); ?>"
-                    width="<?php echo esc_attr($buttonArrowWidth); ?>" alt="button arrow">
-                </a>
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($lpBannerRightBtn)): ?>
-              <div class="btn_wrapper">
-                <a href="<?php echo esc_url($lpBannerRightBtn['url']); ?>"
-                  target='<?php echo esc_attr($lpBannerRightBtn['target'] ? $lpBannerRightBtn['target'] : '_self'); ?>'
-                  class="btn">
-                  <?php echo esc_html($lpBannerRightBtn['title']); ?>
-                  <img src="<?php echo esc_url($buttonArrowUrl); ?>" height="<?php echo esc_attr($buttonArrowHeight); ?>"
-                    width="<?php echo esc_attr($buttonArrowWidth); ?>" alt="button arrow">
-                </a>
-              </div>
-            <?php endif; ?>
-          </div>
+            <div class="btns d-flex align-items-center flex-column flex-md-row gap-3">
+              <?php if (!empty($lpBannerLeftBtn)): ?>
+                <div class="btn_wrapper">
+                  <a href="<?php echo esc_url($lpBannerLeftBtn['url']); ?>"
+                    target='<?php echo esc_attr($lpBannerLeftBtn['target'] ? $lpBannerLeftBtn['target'] : '_self'); ?>'
+                    class="btn">
+                    <?php echo esc_html($lpBannerLeftBtn['title']); ?>
+                    <img src="<?php echo esc_url($buttonArrowUrl); ?>" height="<?php echo esc_attr($buttonArrowHeight); ?>"
+                      width="<?php echo esc_attr($buttonArrowWidth); ?>" alt="button arrow">
+                  </a>
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($lpBannerRightBtn)): ?>
+                <div class="btn_wrapper">
+                  <a href="<?php echo esc_url($lpBannerRightBtn['url']); ?>"
+                    target='<?php echo esc_attr($lpBannerRightBtn['target'] ? $lpBannerRightBtn['target'] : '_self'); ?>'
+                    class="btn">
+                    <?php echo esc_html($lpBannerRightBtn['title']); ?>
+                    <img src="<?php echo esc_url($buttonArrowUrl); ?>" height="<?php echo esc_attr($buttonArrowHeight); ?>"
+                      width="<?php echo esc_attr($buttonArrowWidth); ?>" alt="button arrow">
+                  </a>
+                </div>
+              <?php endif; ?>
+            </div>
           <?php endif; ?>
         </div>
 
-      <!-- RIGHT -->
+        <!-- RIGHT -->
         <?php if (!empty($lpBannerBookImg)): ?>
-          <div class="col-lg-6 text-end books">
-            <img src="<?php echo esc_url($lpBannerBookImg['url']); ?>" alt="<?php echo esc_attr($lpBannerBookImg['alt']); ?>"
+          <div class="col-lg-7 text-end books">
+            <img src="<?php echo esc_url($lpBannerBookImg['url']); ?>"
+              alt="<?php echo esc_attr($lpBannerBookImg['alt']); ?>"
               height="<?php echo esc_attr($lpBannerBookImg['height']); ?>"
               width="<?php echo esc_attr($lpBannerBookImg['width']); ?>">
-          </div>  
-     <?php endif; ?>
-       
+          </div>
+        <?php endif; ?>
+
       </div>
     </div>
   </section>
-  <?php endif; ?>
+<?php endif; ?>
