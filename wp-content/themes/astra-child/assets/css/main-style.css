@@ -1146,7 +1146,7 @@ position: absolute;
   font-size: var(--fs-20);
 }
 .main-footer .footer-content p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .main-footer .footer-content p:last-child {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
@@ -1182,8 +1182,8 @@ position: absolute;
   transition: 0.3s;
 }
 .main-footer .social a img {
-  height: 18px;
-  width: 18px;
+  height: 22px;
+  width: 22px;
   filter: brightness(0) invert(1);
   transition: 0.3s ease;
 }
@@ -1494,7 +1494,7 @@ top: 13px;
 }
 
 .roadmap-section .roadmap-card p {
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 .roadmap-section .roadmap-card:hover {
