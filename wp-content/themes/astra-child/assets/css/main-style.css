@@ -513,14 +513,14 @@ background-image: url('../images/button-arrow.svg');
 }
 .hero-section.landing-hero-section p{
   padding-bottom: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;position: relative;
 }
 .hero-section.landing-hero-section p:after{
 position: absolute;
   width: 100%;
   height: 1px;
-  background: linear-gradient( to right, transparent, rgba(205, 214, 150, 0.2), rgba(205, 214, 150, 0.8), rgb(255, 215, 120), rgba(205, 214, 150, 0.8), rgba(205, 214, 150, 0.2), transparent );
-  margin: 40px 0;
+ background: linear-gradient( 90deg, rgba(10, 125, 204, 0) 0%, rgb(255, 215, 120) 49.52%, rgba(10, 125, 204, 0) 100% );
+ bottom: 0;
   content: '';
 }
 .hero-section .grad-border {
