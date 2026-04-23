@@ -512,8 +512,8 @@ background-image: url('../images/button-arrow.svg');
   font-size:var(--fs-66)
 }
 .hero-section.landing-hero-section p{
-  padding-bottom: 20px;
-  margin-bottom: 10px;position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 20px;position: relative;
 }
 .hero-section.landing-hero-section p:after{
 position: absolute;
@@ -522,6 +522,7 @@ position: absolute;
  background: linear-gradient( 90deg, rgba(10, 125, 204, 0) 0%, rgb(255, 215, 120) 49.52%, rgba(10, 125, 204, 0) 100% );
  bottom: 0;
   content: '';
+  left: 0;
 }
 .hero-section .grad-border {
   margin: auto;
@@ -1637,7 +1638,7 @@ background-color: var(--clr-0F1016);
     width: 20%;text-align: center;
   }
   .landing-hero-section .books img{
-    margin-bottom: -50px;
+    margin-bottom: 0px;
   }
 }
 @media (min-width:768px){
