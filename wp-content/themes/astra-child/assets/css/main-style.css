@@ -1536,6 +1536,7 @@ margin-top: 60px;
     flex-shrink: 0;
     position: relative;
     z-index: 1;
+    font-weight: 700;
 }
 .humai-ecosystem .eco-item span::before{
   content: "";
