@@ -1332,6 +1332,7 @@ width: 100%;
 .humai-section .humai-img {
   border-radius: 16px;
   overflow: hidden;
+  box-shadow: rgba(72, 135, 202, 0.3) 0 0 90px 33px;
 }
 
 .humai-section .humai-img img {
