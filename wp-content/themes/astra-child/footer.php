@@ -142,8 +142,8 @@ if(!empty($footerLogo) || !empty($title) || !empty($footerSocials) || !empty($de
                       $ftrBtn = get_sub_field('button_footer_humait');
                   ?>
                 <li>
-                  <div class="btn_wrapper btn_wrapper2">
-                        <a href="<?php echo $ftrBtn['url']; ?>" target='<?php echo $ftrBtn['target'] ? $ftrBtn['target'] : '_self'; ?>' class="btn btn2">
+                  <div class="btn_wrapper ">
+                        <a href="<?php echo $ftrBtn['url']; ?>" target='<?php echo $ftrBtn['target'] ? $ftrBtn['target'] : '_self'; ?>' class="btn">
                             <?php echo $ftrBtn['title']; ?> 
                             <img
                                     src="<?php echo $buttonArrowUrl; ?>"

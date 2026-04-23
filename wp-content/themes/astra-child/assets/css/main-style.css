@@ -228,16 +228,16 @@ background-image: url('../images/button-arrow.svg');
 .btn:hover {
   color: var(--clr-FFFFFF);
 }
-.btn_wrapper.btn_wrapper2 {
+.btn_wrapper.btn_wrapper2 , .main-footer  .contact li .btn_wrapper{
   background: rgba(201, 107, 0, 0.08);
 }
-.btn_wrapper.btn_wrapper2::after {
+.btn_wrapper.btn_wrapper2::after , .main-footer  .contact li .btn_wrapper:after{
   box-shadow: 0 8px 30px #a85f00;
 }
-.btn_wrapper.btn_wrapper2::before {
+.btn_wrapper.btn_wrapper2::before , .main-footer  .contact li .btn_wrapper:before{
   box-shadow: 0 -8px 20px #a85f00;
 }
-.btn.btn2::before {
+.btn.btn2::before , .main-footer  .contact li:last-child a:before{
   background: linear-gradient(
     92.32deg,
     #ecb154 1.95%,
