@@ -137,7 +137,7 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
             <div class="orb">G</div>
             <h1>Guun</h1>
             <p>Tools designed for clarity, efficiency, and next-level productivity.</p>
-            <button class="btn">Start Now</button>
+            
         </div>
     </section>
 
