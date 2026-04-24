@@ -1683,24 +1683,6 @@ background-color: var(--clr-0F1016);
   box-shadow: 0 0 25px #a85f00;
 }
 
-/* BUTTON */
-.humait-sections .btn {
-  padding: 12px 30px;
-  border-radius: 30px;
-  border: 1px solid #046bd2;
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-
-.humait-sections .btn:hover {
-  background: #046bd2;
-}
-
-.humait-sections .btn.gold:hover {
-  background: #a85f00;
-  border-color: #a85f00;
-}
 
 .humait-sections > section{
   min-height: 100vh;

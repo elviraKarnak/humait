@@ -119,7 +119,7 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
             <div class="orb">H</div>
             <h1>Humait</h1>
             <p>A new system for humanity where intelligence, balance, and future vision align.</p>
-            <button class="btn">Explore</button>
+           
         </div>
     </section>
 
@@ -128,7 +128,7 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
             <div class="orb gold">T</div>
             <h1>Ttun</h1>
             <p>Connecting systems, people, and intelligence into one seamless flow.</p>
-            <button class="btn gold">Discover</button>
+            
         </div>
     </section>
 
@@ -146,7 +146,7 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
             <div class="orb gold">U</div>
             <h1>Urcoin</h1>
             <p>Redefining value through secure and scalable digital currency systems.</p>
-            <button class="btn gold">View Platform</button>
+           
         </div>
     </section>
 
@@ -155,7 +155,7 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
             <div class="orb">A</div>
             <h1>Auzadi</h1>
             <p>Freedom-driven innovation for a truly open and evolving digital world.</p>
-            <button class="btn">Join Now</button>
+            
         </div>
     </section>
 </div>
