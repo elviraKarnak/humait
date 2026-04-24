@@ -47,4 +47,27 @@ jQuery(document).ready(function ($) {
       $(".main-header").removeClass("sticky");
     }
   });
+
+
+
+  $('.humai-ecosystem a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+
+    const targetId = $(this).attr('href');
+    const target = $(targetId);
+
+    if (target.length) {
+
+      const offset = 80; // adjust for header
+      const targetPosition = target.offset().top - offset;
+
+      $('html, body').animate({
+        scrollTop: targetPosition
+      }, 1200, 'swing'); // 👈 speed + easing
+
+    }
+  });
+
+  
 });;
+
