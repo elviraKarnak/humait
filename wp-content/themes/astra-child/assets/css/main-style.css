@@ -1702,7 +1702,13 @@ background-color: var(--clr-0F1016);
   border-color: #a85f00;
 }
 
-
+.humait-sections > section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
 @media (max-width:1200px){
   .roadmap-wrapper  .row > div:nth-child(1){
     order: 1;
