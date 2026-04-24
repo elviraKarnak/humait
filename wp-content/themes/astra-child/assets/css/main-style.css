@@ -1601,6 +1601,108 @@ margin-top: 60px;
 .main-header.inner-header{
 background-color: var(--clr-0F1016);
 }
+
+
+.humait-sections {
+  color: #fff;
+  background: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564') no-repeat center/cover;
+  background-attachment: fixed;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* NAV */
+.humait-sections .nav {
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.humait-sections .nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.humait-sections .nav a:hover {
+  color: #046bd2;
+}
+
+/* SECTION */
+.humait-sections .section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px;
+}
+
+/* CARD */
+.humait-sections .card {
+  max-width: 800px;
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+/* TEXT */
+.humait-sections h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.humait-sections p {
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+/* ORB */
+.humait-sections .orb {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  background: radial-gradient(circle, #046bd2, #000);
+  box-shadow: 0 0 25px #046bd2;
+}
+
+.humait-sections .orb.gold {
+  background: radial-gradient(circle, #a85f00, #000);
+  box-shadow: 0 0 25px #a85f00;
+}
+
+/* BUTTON */
+.humait-sections .btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 1px solid #046bd2;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.humait-sections .btn:hover {
+  background: #046bd2;
+}
+
+.humait-sections .btn.gold:hover {
+  background: #a85f00;
+  border-color: #a85f00;
+}
+
+
 @media (max-width:1200px){
   .roadmap-wrapper  .row > div:nth-child(1){
     order: 1;
