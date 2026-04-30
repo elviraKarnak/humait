@@ -129,19 +129,19 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
 
                 $title = get_sub_field('title_he');
 
-                $first_word = false;
+                $first_letter = false;
 
                 if($title){
 
-                    $first_word = strtok(trim($title), ' ');
+                    $first_letter = substr(trim($title), 0, 1);
                 }
 
             ?>
 
                 <section id="<?php echo strtolower($title); ?>">
                     <div class="card">
-                        <?php if($first_word){ ?>
-                            <div class="orb"><?php echo $first_word; ?></div>
+                        <?php if($first_letter){ ?>
+                            <div class="orb"><?php echo $first_letter; ?></div>
                         <?php } ?>
 
                         <?php if($title){ ?>
