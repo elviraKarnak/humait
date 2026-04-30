@@ -113,49 +113,48 @@ $secImgCoverImgUrl = !empty($secImg['url']) ? $secImg['url'] : get_stylesheet_di
 <?php endif; ?>
 
 
-<div class="humait-sections">
-    <section id="humait">
-        <div class="card">
-            <div class="orb">H</div>
-            <h1>Humait</h1>
-            <p>A new system for humanity where intelligence, balance, and future vision align.</p>
-           
-        </div>
-    </section>
+<?php if (have_rows('humait_ecosystem')): ?> 
 
-    <section id="ttun">
-        <div class="card">
-            <div class="orb gold">T</div>
-            <h1>Ttun</h1>
-            <p>Connecting systems, people, and intelligence into one seamless flow.</p>
-            
-        </div>
-    </section>
+    <div class="humait-sections">
 
-    <section id="guun">
-        <div class="card">
-            <div class="orb">G</div>
-            <h1>Guun</h1>
-            <p>Tools designed for clarity, efficiency, and next-level productivity.</p>
-            
-        </div>
-    </section>
+     <?php 
+     
+            while (have_rows('humait_ecosystem')):
+                        
+                the_row();
 
-    <section id="urcoin">
-        <div class="card">
-            <div class="orb gold">U</div>
-            <h1>Urcoin</h1>
-            <p>Redefining value through secure and scalable digital currency systems.</p>
-           
-        </div>
-    </section>
+                $title = get_sub_field('title_he');
+                $description = get_sub_field('description_he');
 
-    <section id="auzadi">
-        <div class="card">
-            <div class="orb">A</div>
-            <h1>Auzadi</h1>
-            <p>Freedom-driven innovation for a truly open and evolving digital world.</p>
-            
-        </div>
-    </section>
-</div>
+
+                $title = get_sub_field('title_he');
+
+                $first_word = false;
+
+                if($title){
+
+                    $first_word = strtok(trim($title), ' ');
+                }
+
+            ?>
+
+                <section id="<?php echo strtolower($title); ?>">
+                    <div class="card">
+                        <?php if($first_word){ ?>
+                            <div class="orb"><?php echo $first_word; ?></div>
+                        <?php } ?>
+
+                        <?php if($title){ ?>
+                            <h1><?php echo $title;  ?></h1>
+                        <?php } ?>
+                        <?php if($description){ ?>
+                            <p><?php echo $description; ?></p>
+                        <?php } ?>
+                    
+                    </div>
+                </section>
+
+            <?php endwhile; ?>
+    </div>
+
+<?php endif; ?>    
